@@ -1,0 +1,90 @@
+@import'events-mixin';
+@import'variables-events';
+
+.events-article{
+  
+    .events{
+      
+        .event {
+                div {
+                    a {
+                        text-decoration: none;
+                    }
+        
+                    h1 {
+                        margin: 20px 0px 20px 0px;
+        
+                        a {
+        
+                            transition: all .3s ease;
+                            @include text ($font-22, $color-font-3, $font-noto-sans);
+                            font-weight: 500;
+        
+                            &:hover {
+                                color: $color-hover
+                            }
+                        }
+        
+                    }
+        
+                    small {
+                        @include text ($font-20, $color-font-3, $font-roboto);
+        
+                        a {
+                            transition: all .3s ease;
+                            @include text ($font-20, $color-font-3, $font-roboto);
+        
+                            &:hover {
+                                color: $color-hover;
+                            }
+                        }
+                    }
+                }
+    }}
+    .events-matters-side{
+
+        
+            h3 {
+                @include text (18px, $color-font, $font-noto-sans);
+                font-weight: 400;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+        
+         
+        
+
+            .recent-events{
+              
+                  
+                     
+                      small{
+                         
+                          @include text (10px,#888888,$font-roboto);
+                      }
+                  
+                  }
+        }
+        .social-network-events{
+        
+            text-align: center;
+              
+        }
+        .login-events{
+
+            input{
+              border: 1px solid rgba(0, 0, 0, 0.312);
+              margin-top: 20px;
+              height: 30px;
+              outline:none;
+              border-radius: 3px;
+              width: 100%;
+              padding-left: 10px;
+              max-width: 100%;
+            }
+        
+          }
+        }
+    
+
+

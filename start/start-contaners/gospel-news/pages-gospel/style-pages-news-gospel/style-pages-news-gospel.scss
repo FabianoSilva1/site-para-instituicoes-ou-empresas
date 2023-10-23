@@ -1,0 +1,129 @@
+@import"../../../../../componentes-standard/menu-footer/menus";
+@import"../../../../../componentes-standard/menu-footer/variables";
+@import"../../../../../componentes-standard/menu-footer/mixin";
+@import"../../../../../componentes-standard/menu-footer/footer";
+@import"../../../../../componentes-standard/container-page/container";
+@import"../../../../../componentes-standard/links/links";
+@import'../../../../../componentes-standard/animation-text-page/propriets-ani';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box-news{
+    @include containers-responsive-w (100%,100%,auto,$color-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px ;
+
+article{
+&:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+figure{
+width: 850px;
+height: 850px;
+max-width: 100%;
+background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+background-size: cover;
+
+}
+h1{
+    @include text ($font-7, $color-font-5,$font-overlock);
+    font-weight: 500;
+    margin: 20px 0px;
+}
+p{
+    @include text ($font-pattern-3, $color-font-5,$font-roboto);
+    font-weight: 400;
+
+}
+span{
+    @include text ($font-pattern-3, $color-font-5,$font-roboto);
+    font-weight: 400;
+    margin: 20px 0px;   
+}
+button{
+    background-color: transparent;
+    border: none;
+    @include text ($font-4,$color-font-5, $font-roboto);
+    text-align: start;
+a{
+    text-decoration: none;
+    transition: all .3s;
+    @include text ($font-4,$color-font-5, $font-roboto);
+&:hover{
+    color: $color-hover;
+}
+}
+}
+}
+&:nth-of-type(2){
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+h1{
+    align-self: flex-start;
+    @include text (22px, $color-font-5, $font-noto-sans);
+    font-weight: 500;
+}
+.article-relation{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+div{
+
+&:nth-of-type(2){
+    margin: 0px 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+a{
+    text-decoration: none;
+figure{
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+}
+}
+h1,span{
+    padding: 0px 30px;
+}
+h1{
+    margin: 10px 0px;
+a{
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 500;
+    @include text (22px,$color-font-5, $font-noto-sans);
+&:hover{
+    color: $color-hover;
+}
+}
+}
+span{
+    @include text ($font-4,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: $font-6;
+}
+}
+}
+}
+}
+}
+
+@import 'responsive-pages-news-gospel/mobile-pages-news';
+@import 'responsive-pages-news-gospel/tablet-pages';

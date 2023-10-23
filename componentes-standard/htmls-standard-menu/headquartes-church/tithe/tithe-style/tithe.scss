@@ -1,0 +1,257 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../../componentes-standard/links/links';
+@import '../../../../animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.buttons-bank{
+    display: flex;
+    @include containers-responsive-w ( 100%,100%,auto,$color-font);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 70px ;
+div{
+button{
+// padding: 15px 150px;
+border: none;
+@include text ($font-pattern-3,$color-font,$font-roboto);
+font-weight: 400;
+transition: all .3s;
+border-radius: 5px;
+background-color: transparent;
+a{
+    text-decoration: none;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    transition: all .3s;
+    border-radius: 5px;
+
+}
+&:nth-of-type(1){
+
+a{
+    padding: 15px 150px;
+    background-color: $bgcolor;
+&:hover{
+background-color: $color-hover;
+}
+}
+}
+&:nth-of-type(2) {
+a{
+    padding: 15px 200px;
+    background-color: $bgcolor;
+&:hover{
+    background-color: $color-hover;
+}
+}
+    margin: 0 10px;
+    
+}
+&:nth-of-type(3){
+a{
+    padding: 15px 150px;
+    background-color: #cda866;
+    
+&:hover{
+    background-color: $bgcolor;
+}
+}
+}
+}
+}
+p{
+    text-align: center;
+    @include text ($font-3, $color-font-5,$font-noto-sans);
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 80px;
+}
+}
+.bank-brazil{
+    @include containers-responsive-w(100%,100%,auto,$bgcolor);
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+div{
+&:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+position: relative;
+justify-content: center;
+}
+&:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation-delay: .2s;
+}
+}
+
+
+figure{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    opacity: 0;
+img{
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+h3{
+    @include text (36px,$color-font,$font-noto-sans);
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: $font-9;    
+    position: relative;
+    text-align: center;
+    display: flex;
+    
+}
+.collection-animation{
+    margin-left: 10px;
+    width: 160px;
+}
+span{
+    @include text ( $font-3,$color-font,$font-roboto);
+    font-weight: 400;
+    line-height: $font-3;
+&:nth-of-type(1){
+    margin-bottom: 10px;
+}
+}
+h4{
+    @include text($font-5,#cecece,$font-noto-sans);
+    font-weight: 500;
+    line-height: $font-6;
+    margin-bottom: 10px;
+    margin: 20px 0px;
+}
+p{
+    @include text ($font-4,$color-font,$font-roboto);
+    line-height: $font-6;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+}
+.bank-pix{
+    @include containers-responsive-w(100%,100%,auto,$color-font);
+    padding: 200px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+div{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+&:nth-of-type(1){
+h3{
+    @include text ($font-7,$bgcolor,$font-noto-sans);
+    font-weight: 600;
+    line-height: $font-6;
+    margin: 50px 0px 35px 0px;
+}
+figure{
+    width: 100%;
+    height: 200px;    
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    align-items: center;
+img{
+    width: 60%;
+}
+}
+p{
+&:nth-of-type(1){
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    margin: 0px 0px 20px 0px;
+}
+&:nth-of-type(2){
+    line-height: $font-8;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include text ($font-5,$color-font-5,$font-roboto);
+}
+&:nth-of-type(3){
+    font-weight: 400;
+    line-height: $font-4;
+    @include text (13px,$color-font-5,$font-roboto);
+}
+}
+}
+&:nth-of-type(2){
+
+figure{
+    width: 400px;
+    height: 400px;
+img{
+    width: 100%;
+    height: 100%;
+}
+}
+}
+}
+.ani-text-pix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    opacity: 0;
+    animation-delay: .2s;
+.collection-animation{
+    width: 155px;
+    height: 30px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+}
+}
+.opacity-bank{
+    
+    animation: ani-bank .3s ease-in-out forwards;
+    @keyframes ani-bank {
+        from{
+            opacity: 0;
+            transform: translateX(-40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+.ani-text-opacy-tras-pos{
+    animation: ani-bank-pos .3s ease-in-out forwards;
+
+    @keyframes ani-bank-pos {
+        from{
+            opacity: 0;
+            transform: translateX(40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+@import '../responsive-tithe/responsive-mobile-tithe';
+@import '../responsive-tithe/responsive-tablet-tithe';

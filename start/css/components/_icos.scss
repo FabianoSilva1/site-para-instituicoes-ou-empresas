@@ -1,0 +1,267 @@
+@import 'variables';
+@import 'mixin';
+
+// nav {
+//     div {
+//         &:nth-child(3) {
+//             width: auto;
+//             height: auto;
+//             align-items: center;
+//             display: flex;
+//             flex-direction: row;
+
+//             .fa-solid {
+//                 @include icos ($font-4, $color-hover);
+//                 padding: 15px;
+//                 cursor: pointer;
+
+//                 transition: all 0.3s;
+
+//                 &:hover {
+//                     color: $color-font;
+//                 }
+//             }
+//         }
+
+//     }
+
+// }
+
+.box-links-paragraphs {
+div {
+&:nth-child(1) {
+div {
+    display: flex;
+    flex-direction: row;
+
+a {
+
+.fa-solid,
+.fa-brands {
+    margin-bottom: 5px;
+    @include icos ($font-8, $bgcolor);
+    padding: 10px;
+    transition: all .3s;
+
+&:hover {
+    transform: scale(0.9);
+    color: $color-hover;
+
+}
+
+
+}
+}
+
+}
+
+}
+}
+}
+.hidden-container{
+    .buttons-page-hidden{
+    a{
+      i{
+        font-size: 40px;
+        transition: all .1s ease;
+        margin-bottom: 15px;
+        &:hover{
+            transform: scale(1.3);
+        }
+      }
+    }
+            
+        }
+    }
+.hidden-container{
+span{
+i{
+    color: $color-hover;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .3s;
+
+}
+}
+}
+.map-localization {
+    .components-infor {
+        div {
+            &:nth-child(2) {
+                #icor-localization-golden {
+                    color: $color-hover;
+                    margin-right: 10px;
+                }
+            }
+
+            button {
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .icos-links {
+            margin-bottom: 40px;
+
+            a {
+                margin: 0 20px 0 20px;
+                @include text ($font-pattern-3, $bgcolor, $font-roboto);
+                text-decoration: none;
+                transition: all .3s;
+
+                &:hover {
+                    color: $color-hover;
+                }
+
+                i {
+                    margin-right: 3px;
+                }
+            }
+        }
+
+    }
+}
+
+
+    
+.father-events {
+h3 {
+i {
+    color: $color-hover;
+    font-size: 50px;
+
+}
+}
+}
+
+.studies {
+    h1 {
+        i {
+            color: $color-hover
+        }
+    }
+
+    .studies-resources {
+
+        div {
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                transition: all .3s;
+
+
+            }
+
+            a {
+                &:nth-of-type(2n + 1) {
+                    color: $color-hover;
+                    font-size: 47px;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        color: $color-font;
+                    }
+
+                }
+            }
+
+            a {
+                &:nth-of-type(2n +2) {
+                    @include text($font-pattern-3, $color-font-2, $font-roboto);
+                    height: 500;
+                    line-height: 20px;
+                    margin-top: 20px;
+
+                    &:hover {
+                        color: $color-font;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        &:nth-of-type(1) {
+            grid-area: ico-one;
+        }
+    }
+
+    a {
+        &:nth-of-type(2) {
+            grid-area: description-one;
+
+        }
+    }
+
+    a {
+        &:nth-of-type(3) {
+            grid-area: ico-two;
+        }
+    }
+
+    a {
+        &:nth-of-type(4) {
+            grid-area: description-two;
+        }
+    }
+
+    a {
+        &:nth-of-type(5) {
+            grid-area: ico-three;
+        }
+    }
+
+    a {
+        &:nth-of-type(6) {
+            grid-area: description-three;
+        }
+    }
+}
+
+.container-acceptance {
+    .box-acceptance{
+        .box-links{
+        a {
+            @include text ($font-pattern-3, rgb(11, 35, 62), $font-roboto);
+            display: grid;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+            font-weight: 500;
+
+            &:hover {
+                color: black;
+            }
+
+
+                i {
+                font-size: 54px;
+                display: grid;
+                margin-bottom: 20px;
+                align-self: end;
+                color: $color-hover ;
+                transition: all .3s;
+
+                &:hover {
+                    color: $bgcolor;
+                    transform: scale(1.2);
+                }
+
+
+            }
+        }
+    }
+}
+}
+.container-login{
+    div{
+        &:nth-of-type(1){
+            h3{
+                i{
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+}

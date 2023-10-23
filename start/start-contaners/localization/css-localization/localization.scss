@@ -1,0 +1,91 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'components-localition/location-title';
+@import'components-localition/location-paragraph';
+@import'components-localition/location-icos';
+@import'components-localition/location-mixin';
+@import'components-localition/location-img';
+@import'components-localition/location-variables';
+@import'../../../../componentes-standard/menu-footer/footer';
+@import'../../../../componentes-standard/animation-text-page/propriets-ani';
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.map-location{
+    @include containers-responsive-w(100%,100%,550px,$bgcolor);
+    iframe{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.church-location{
+    @include containers-responsive-w(100%,100%,700px,$bgcolor);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .location-instruction{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 1300px;
+        max-width: 100%;
+        height: 250px;
+
+        div{
+            
+         width: 350px;
+         max-width: 100%;
+         height: 250px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         transition: all .2s;
+         &:hover{
+            background-color: #0A1F36;
+         }
+        }
+
+    }
+}
+.localition-church{
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+.location-background{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        @include containers-responsive-w(100%,100%,100%,#000000b6);
+     
+        select{
+            width: 540px;
+            max-width: 540px;
+            padding: 0px 10px 0px 10px;
+            height: 70px;
+            outline: none;
+            border: 1px solid #80bdffbf;
+            border-radius: 3px;
+            font-size: $font-4;
+            font-weight: 400;
+            line-height: 30px;
+            color: #595057;
+            // -webkit-appearance: none;
+            
+        }
+     
+    }
+}
+@import '../responsive-localization-tablet/responsive-localization-tablet';
+@import '../responsive-localization-mobile/localization-mobile';

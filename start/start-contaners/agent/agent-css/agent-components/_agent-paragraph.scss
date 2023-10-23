@@ -1,0 +1,35 @@
+@import 'agent-mixin';
+@import 'agent-variables';
+
+.downloand-agent{
+p{
+  display: flex;
+  flex-direction: row;
+margin-bottom: 40px;
+  font-weight: 400;
+  @include text (22px,$color-font-3,$font-roboto);
+@include responsive(tablet){
+  font-size: 13px;
+}
+  span{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2f2f2f;
+@include responsive(tablet){
+  margin: 0;      
+}
+  }
+}
+div{
+  &:nth-of-type(1){
+    p{
+      &:nth-of-type(1){
+        @include text(14px,$color-font,$font-noto-sans);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  
+  }
+}
+}

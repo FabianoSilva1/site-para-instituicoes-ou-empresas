@@ -1,0 +1,87 @@
+@import '../../../componentes-standard/menu-footer/mixin';
+@import '../../../componentes-standard/menu-footer/variables';
+
+#container-image-youtube{
+#container-background-image-youtube{
+h2{
+  @include text ($font-7,$color-font,$font-noto-sans);
+  font-weight: 600;
+  line-height: 22px;
+  margin: 20px 100px 0 0;
+  margin-bottom: 20px;
+@include responsive (mobile){
+  font-size: 25px;
+}
+}  
+}
+h3{
+  @include text ($font-3,rgb(206,206,206),$font-noto-sans);
+  font-weight: 500;
+  margin: 20px 100px 0 0;
+}
+}
+.container-youtube-videos-tv{   
+.container-videos-tv{           
+.video-tv{
+.description-video{
+h4{
+  @include text (16px, $color-font, $font-roboto);
+  font-weight: 400;
+  transition: all .2s;
+  line-height: 25px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+&:hover{
+  color: $color-font-19;
+}
+}
+span{
+  @include text (12px, $color-font-15, $font-roboto);
+  margin-top: 10px
+}
+}       
+}
+}       
+}
+  
+
+
+.youtube-plates {
+
+ #youtube-plates-title{
+ 
+  @include text ($font-6, $color-font, $font-noto-sans);
+    line-height: 33px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  
+  }
+
+
+}
+.youtube-plates{
+.container-plates{
+.card{
+.flip-card{
+.front-card{
+  article{
+  h1{
+    @include text ($font-6, $color-font, $font-noto-sans);
+    font-weight: 500;
+  }
+  }
+}
+.back-card{
+h1{
+  @include text($font-4, black,$font-roboto);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+}
+}
+}
+}
+}
+
+    

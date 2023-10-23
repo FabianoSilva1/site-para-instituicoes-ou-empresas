@@ -1,0 +1,242 @@
+@import 'mixin';
+@import '../../../componentes-standard/menu-footer/variables';
+h1,h2,h3,h4{
+    font-weight: 500;
+}
+// .automatic-images {
+//     div {
+//         h1 {
+//             font-size: $font-14 ;
+//         }
+
+//         h2 {
+//             font-size: $font-10;
+//         }
+
+//         h3 {
+//             font-size: $font-7;
+//         }
+
+//         h1,
+//         h2,
+//         h3 {
+//             text-align: center;
+//             font-family: $font-noto-sans;
+//             text-shadow: 0 0 1em rgb(33, 81, 212), 0 0 0.2em #0B233F;
+//             color: $color-font;
+//         }
+//     }
+// }
+
+.box-links-paragraphs {
+div {
+&:nth-child(2) {
+
+h3 {
+    @include text(32px, #5B5D69, $font-noto-sans);
+    font-weight: 500;
+    line-height: 100px;
+
+}
+}
+}
+}
+
+.highlights {
+    h3 {
+        @include text ($font-7, $color-font, "Noto Sans");
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
+
+}
+
+.components-infor {
+    div {
+        &:nth-child(2) {
+
+            h3 {
+                margin-top: 25px;
+                font-weight: 300;
+                @include text ($font-8, black, $font-noto-sans);
+            }
+        }
+    }
+}
+
+
+.background-youtube {
+    
+
+div {
+&:nth-child(1) {
+.text-animation{
+    display: flex;
+    flex-direction: row;
+h1{
+    height: 50px;
+    @include text ($font-8,$color-font,$font-roboto);
+    font-weight: 500;
+    //transform: rotateX(60deg);
+    margin-bottom: 20px;
+
+
+}
+.animation-youtube{
+    color: $color-hover;
+    height: 80%;
+    position: relative;
+    perspective: 300px;
+    display: flex;
+
+    flex-direction: row;
+
+// @-webkit-keyframes animated-text-animation-flip-out {
+//     0% {
+//         -webkit-transform: rotateX(0);
+//         opacity: 1
+//     }
+
+//     35% {
+//         -webkit-transform: rotateX(-40deg);
+//         opacity: 1
+//     }
+
+//     65% {
+//         opacity: 0
+//     }
+
+//     100% {
+//         -webkit-transform: rotateX(180deg);
+//         opacity: 0
+//     }
+// }
+
+}     
+}
+}
+}
+.select-video {
+    
+.videos-Youtube{
+.box-video{
+h4{
+    text-align: center;
+    padding: 10px;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    margin-top: 5px;
+    font-weight: 400;
+    transition: all .2s;
+    @include text (16px,$color-font,$font-roboto);
+    cursor: pointer;
+
+&:hover{
+
+    color: $color-font-19;
+
+}
+
+}
+small{
+    @include text (11px,$color-font-22,font-roboto);
+    font-weight: 400;
+  }
+}
+}
+}
+}
+.father-events {
+h3 {
+    @include text (50px, black, $font-noto-sans);
+    font-weight: 300;
+    line-height: 38px;
+    text-transform: none;
+    text-decoration: none;
+    margin-bottom: 40px;
+//configuração resposive mobile
+
+}
+}
+.studies{
+
+h1{
+    text-align: center;
+    grid-area: title;
+    margin-bottom: 30px;
+    @include text($font-8,black,$font-noto-sans);
+    font-weight: 300;
+}
+.studies-matters{
+    div{
+        h3{
+            text-align: center;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                line-height: $font-4;
+               padding: 10px;
+                @include text ($font-pattern-3,$bgcolor,$font-noto-sans);
+                transition: all .3s;
+                &:hover{
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+        
+ 
+    
+}
+.studies-resources{
+        
+div{
+ h4{
+    grid-area: resouces-title;
+    @include text ($font-4,$color-font,$font-roboto);
+    font-weight: 400;
+    margin-bottom: 20px;
+ }
+    }
+}
+}
+
+
+.content-photos {
+
+    div {
+        &:nth-of-type(1) {
+
+            h1 {
+                @include text (38px,$color-font,$font-noto-sans);
+                font-weight: 300;
+            }
+        }
+    }
+
+}
+.container-acceptance{
+.box-acceptance{
+h1{
+    @include text (38px, $bgcolor,$font-noto-sans);
+    line-height:45px;
+    margin-bottom: 40px;
+    font-weight: 600;
+#magnet-image-svg{
+     position: relative;
+}
+}
+}
+}
+.container-login{
+    div{
+        &:nth-of-type(1){
+            h3{
+                @include text (38px,rgb(119, 119, 119),$font-noto-sans);
+                font-weight: 300;
+                margin-bottom:10px ;
+            }
+        }
+    }
+}

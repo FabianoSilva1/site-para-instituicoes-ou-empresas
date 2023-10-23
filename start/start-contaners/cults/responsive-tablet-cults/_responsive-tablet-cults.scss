@@ -1,0 +1,30 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+@include responsive (tablet){
+
+.cults-cards{
+
+.container-cards{
+    padding: 100px 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+.card{
+    width: 270px;
+    max-width: 100%;
+    margin: 0 0 20px 0px;
+}
+}
+}
+.cults-days{
+.cults-days-background{
+.days-cults{
+    width: 80%;
+    max-width: 100%;
+
+}
+}
+}
+}

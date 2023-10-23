@@ -1,0 +1,43 @@
+@import'cult-mixin';
+@import'cult-variables';
+
+.container-cards {
+
+
+    .card {
+
+        h1,
+        h2 {
+            @include text ($font-4, $color-font, $font-roboto);
+            font-weight: 500;
+        }
+
+
+
+    }
+}
+
+.cults-days {
+    .cults-days-background {
+        h1 {
+            @include text (32px, $bgcolor, $font-noto-sans);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .days-cults {
+            #days {
+                .day {
+                    h1 {
+                        font-size: 32px;
+                        font-weight: 400;
+                        line-height: 50px;
+                        font-family: $font-roboto;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

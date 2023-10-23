@@ -1,0 +1,100 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../../componentes-standard/links/links';
+@import '../../../../animation-text-page/propriets-ani';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover
+}
+.news-aba{
+    @include containers-responsive-w (100%, 100%,auto, $color-font);
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+.articles-news{
+    width: 850px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 20px;
+article{
+    margin-bottom: 100px;
+figure{
+    width: 850px;
+    max-width: 100%;
+    height: 500px;
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat ;
+    background-size: 100%;
+}
+figcaption{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+h1{
+    @include text (22px, $color-font-5,$font-noto-sans);
+    font-weight: 500;
+    line-height: $font-5;
+    transition: all .2s;
+    margin-bottom: 10px;
+&:hover{
+    color: $color-hover;
+}
+}
+p{
+    @include text ($font-pattern-3, $color-font-5,$font-roboto);
+    line-height: $font-5;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+span{
+    @include text ($font-4, $color-font-5,$font-roboto);
+    line-height: $font-6;
+    font-weight: 400;
+    margin-bottom: 10px;
+a{
+    @include text ($font-4, $color-font-5,$font-roboto);
+    line-height: $font-6;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .3s;
+&:hover{
+    color: $color-hover;
+}
+}
+}
+button{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+a{
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    @include text ($font-3,$color-font-5,$font-roboto);
+    transition: all .3s;
+    font-weight: 500;
+&:hover{
+    color: $color-hover;
+}
+}
+}
+}
+}
+}
+.links{
+    margin-left: 20px;
+}
+}
+@import 'respnsive-news/tablet-news';
+@import 'respnsive-news/mobile-news';

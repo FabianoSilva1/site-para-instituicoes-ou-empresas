@@ -1,0 +1,51 @@
+@import'../../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../../componentes-standard/menu-footer/variables';
+@include responsive (tablet){
+.cont-event-container{
+    flex-direction: column;
+    padding: 0px 100px;
+.cont-event{
+ 
+.event-figure{
+article{
+figure{
+    width: 100%;
+    max-width: 100%;
+    height: 710px;
+ 
+}
+}
+}
+.related-articles-dev{
+    margin-top: 100px;
+div{
+    flex-direction: column;
+article{
+    margin: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+span{
+    margin-bottom: 50px;
+}
+.bt-rl-img{
+    width: 100%;
+    max-width: 100%;
+.link-img-re{
+    width: 100%;
+    max-width: 100%;
+figure{
+    width: 100%;
+    max-width: 100%;
+    height: 710px;
+
+}
+}
+}
+}
+
+}
+}
+}
+}
+}

@@ -1,0 +1,56 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/menu-footer/variables';
+
+.church-location{
+@include responsive(mobile){
+    height: 1500px;
+    padding: 0px 20px;
+}
+p{
+@include responsive(mobile){
+    line-height: 37px !important;
+    width: 100% !important;
+}
+}
+.location-instruction{
+@include responsive (mobile){
+    flex-direction: column;
+    height: 900px;
+}
+
+div{
+@include responsive (mobile){
+    padding: 50px;
+
+}
+p{
+@include responsive (mobile){
+    font-size: 16px ;
+    line-height: 25px !important;
+}
+}
+}
+
+}
+
+}
+.localition-church{
+.location-background{
+h2{
+@include responsive(mobile){
+    margin-bottom: 100px;
+}
+}
+@include responsive (mobile){
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+select{
+@include responsive(mobile){
+    width: 100%;
+}
+}
+}
+}

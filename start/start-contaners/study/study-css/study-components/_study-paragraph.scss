@@ -1,0 +1,18 @@
+@import'study-mixin';
+@import'study-variables';
+
+   .study-container{
+    
+    .studys{
+      
+        .study{
+            article{
+       p{
+        @include text($font-16,$color-font-3,$font-roboto);
+        line-height: 25px;
+        font-weight: 400;
+       }
+        }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../../componentes-standard/menu-footer/variables';
+@include responsive (mobile){
+.box-highlight{
+    flex-direction: column;
+    padding: 100px 20px;
+.highlight{
+    margin-bottom: 150px;
+article{
+&:nth-of-type(1){
+figure{
+    width: 330px;
+    height: 330px;
+}
+p{
+    font-size: 13px;
+    line-height: $font-4;
+}
+}    
+&:nth-of-type(2){
+.article-relation{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+div{
+ 
+    margin: 10px 0px;
+
+button{
+a{
+figure{
+    width: 325px;
+    height: 325px;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

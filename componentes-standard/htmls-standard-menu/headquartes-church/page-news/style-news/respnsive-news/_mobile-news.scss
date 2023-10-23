@@ -1,0 +1,27 @@
+@import '../../../../../menu-footer/mixin';
+@import '../../../../../menu-footer/variables';
+@include responsive(mobile){
+.news-aba{
+    margin-top: 100px;
+p{
+    font-size: 13px !important;
+    line-height: $font-3;
+}
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 50px;
+.articles-news{
+article{
+figure{
+    height: 500px;
+    background-size: cover;
+    background-position: 40% 100%;
+    margin-bottom: 30px;
+}
+}
+}
+.links{
+    margin: 0 0 50px 0;
+}
+}
+}

@@ -1,0 +1,102 @@
+@import '../../../componentes-standard/menu-footer/mixin';
+@import '../../../componentes-standard/menu-footer/variables';
+
+.container-youtube-videos-tv{
+#button-youtube{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding: 10px 30px 10px 30px;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #E40000;
+    transition: all .1s;
+&:hover{
+    background-color: #7B7B7B;
+}
+}
+}
+.backgound-youtube-container{
+.backgound-black-youtube{
+div{
+&:nth-of-type(2){
+a{
+    font-size: $font-pattern-3;
+    font-family: $font-roboto;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .3s;
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
+&:nth-of-type(1){
+    background-color: #E40000;
+    color: $color-font;
+    &:hover{
+    background-color: #7B7B7B;
+}
+}
+&:nth-of-type(2){
+    background-color: $color-font;
+    color: $bgcolor;
+&:hover{
+    color: $color-font;
+    background-color: #7B7B7B;
+}
+}
+}
+}
+}
+}}
+.youtube-plates{
+#button{
+    padding: 12px 40px 12px 40px;
+    background-color: $color-font;
+    border-radius: 4px;
+    color: $color-font;
+    text-decoration: none; 
+    @include text ($font-pattern-3,$bgcolor, $font-roboto);
+    transition: all .2s;
+    margin-top: 70px;
+&:hover{
+    color: $color-font;
+    background-color: #7b7b7b;
+}
+}
+     
+}
+
+.youtube-plates{
+.container-plates{
+.card{
+.flip-card{    
+.back-card{
+button{
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+a{
+    border-radius: 3px;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 12px 130px;
+    background-color: $bgcolor;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    font-weight: 400;
+}
+}
+}
+}
+}
+}       
+} 
+        

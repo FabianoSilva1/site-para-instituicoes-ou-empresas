@@ -1,0 +1,51 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+
+@include responsive(tablet){
+section{
+&:nth-of-type(2){
+    padding: 30px 100px;
+.pastor-senior{
+    margin-top: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+article{
+    flex-direction: column;
+figure{
+    width: 290px;
+    height: 290px;
+    max-width: 100%;
+}
+figcaption{
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+}
+}
+.boards{
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+div{
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+article{
+    flex-direction: row;
+figure{
+    width: 100%;
+    height: 150px;
+}
+figcaption{
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+}
+}
+}
+}
+}
+}

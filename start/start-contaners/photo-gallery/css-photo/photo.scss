@@ -1,0 +1,55 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/container-page/container';
+@import'../../../../componentes-standard/links/links';
+@import'components-photo/title-photo';
+@import'components-photo/paragraph-photo';
+@import'components-photo/img-photo';
+@import'components-photo/ico-photo';
+@import'components-photo/button-photo';
+@import'../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../componentes-standard/menu-footer/variables';
+@import'../../../../componentes-standard/menu-footer/footer';
+@import '../../../../componentes-standard/animation-text-page/propriets-ani';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.photo-gallery{
+    margin-top: 80px;
+    @include containers-responsive-w (100%,100%,auto,$color-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .photos{
+        width: 900px;
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px;
+        .photo{
+            width: 350px;
+            height: 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+            div{
+                padding: 30px;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+               border-left: 1px solid rgba(0, 0, 0, 0.055);
+               border-right: 1px solid rgba(0, 0, 0, 0.055);
+               border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+            }
+
+        }
+    }
+
+}
+@import'../responsive-mobile-photo-gallery/photo-responsive-mobile';
+@import'../responsive-tablet-photo-gallery/responsive-tablet-photo-gallery';

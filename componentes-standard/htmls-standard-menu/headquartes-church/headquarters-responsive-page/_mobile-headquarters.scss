@@ -1,0 +1,88 @@
+@import '../../../menu-footer/mixin';
+@import '../../../menu-footer/variables';
+
+@include responsive (mobile){
+body{
+    overflow-x: hidden;
+}
+.text-church{
+    max-width: 100%;
+    height: 350px;
+    padding: 10px;
+h1{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+p{
+    font-size: 13px;
+    width: 100%;
+}
+}
+
+.senior-pastor-sc {
+padding: 100px 0px;
+flex-direction: column;
+.pastor-text{
+    padding: 0 20px;
+    width: 100%;
+    max-width: 100%;
+.nik-pastor{
+    transform: translateX(-160px);
+    font-size: 35px;
+    width: 100%;
+}
+#pastor-text-paragraph{
+    font-size: $font-pattern-3;
+  
+}
+.button-pastor{
+    margin: 0;
+    border: none;
+    background-color: transparent;
+a{
+padding: 15px;
+
+}
+    
+}
+}
+.pastor-img{
+    height: 390px;
+#img-pastor-config{
+
+    background-size: 250%;
+    background-position-x: 50%;
+}
+}
+}
+
+.board-headquartes{
+overflow-x: hidden;
+.wrapper{
+.board-left{
+    left: -20px !important;
+}
+.board-right{
+    right: -20px !important;
+}
+}
+}
+.church-thirst{
+.paraghaph-church-thirst{
+    font-size:13px ;
+    line-height: $font-4;
+    padding: 0px 10px;
+    width: 100%;
+    max-width: 100%;
+}
+.card-church{
+    flex-direction: column;
+.card{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+}
+}
+}

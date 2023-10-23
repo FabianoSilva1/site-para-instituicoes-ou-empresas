@@ -1,0 +1,25 @@
+@import'../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../componentes-standard/menu-footer/variables';
+.downloand-agent {
+@include responsive(mobile){
+    padding: 100px 30px;
+p{
+    display: block;
+    font-size: 13px;
+span{
+    margin: 0;
+}
+}
+#container-agent-hidden{
+    padding: 0px;
+#close-agent{
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+img{
+    margin: 0;
+}
+}
+}
+}

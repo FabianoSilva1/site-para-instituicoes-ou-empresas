@@ -1,0 +1,22 @@
+@import'mixin-highlights';
+@import'variables-highlights';
+
+.img{
+  background: $bgcolor url("../../../../../imgs/corpo.jpg") center center no-repeat;
+  background-size: cover;
+
+}
+
+.highlights-article {  
+    .hlts{
+      .hlt{
+        a{
+            img{
+                width:100%;
+                height: 100%;
+              
+            }
+        }
+      }
+    }
+}

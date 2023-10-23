@@ -1,0 +1,150 @@
+@import '../../../menu-footer/mixin';
+@import '../../../menu-footer/variables';
+@import '../../../menu-footer/menus';
+@import '../../../menu-footer/footer';
+@import '../../../container-page/container';
+@import 'components-headquarters-church/title-headquarters-church';
+@import 'components-headquarters-church/paragraphs-headquarters-church';
+@import 'components-headquarters-church/button-headquarters-church';
+@import 'components-headquarters-church/img-headquarters-church';
+@import '../../../animation-text-page/propriets-ani';
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden
+}
+.text-church{
+    @include containers-responsive-w (100%, 100% ,412px, $color-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.senior-pastor-sc{
+    @include containers-responsive-w (100% , 100% , auto , #F4F4F4);
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+div{
+    width: 50%;
+    height: 300px;        
+}
+.pastor-text{
+    padding: 0px 0px 0px 150px;
+}
+
+}
+.history-church{
+    @include containers-responsive-w (100%,100%,auto,white);
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.board-headquartes{
+    @include containers-responsive-w(100%,100%,auto, #f4f4f4);
+    padding: 100px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+.wrapper{
+    width: 90%;
+    position: relative;
+    align-items: center;
+    transition: all 2500ms ease 0s;
+    transform: perspective(1000px);
+    transform: rotateX(49deg);
+    opacity: 0.4;
+    background-attachment: fixed;
+    transform-origin: center center ;
+    transform-style: preserve-3d;
+    transition-timing-function: ease;
+    transition-duration: .2s;
+    display: flex;
+.offices-members{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+
+
+.slide-officer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 445px;
+ //   background-color: blue;
+    width: 90%;
+    cursor: grab;
+    transition: all 1s;
+.officer{
+    flex-shrink:0 ;
+    width: 320px ;
+    height: 445px;
+    margin-right: 10px;
+&:last-child{
+    margin-right: 0px
+}
+div{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+    @include containers-responsive-w(100%,100%,29%,$color-font);
+    padding: 20px 20px 25px 20px;;
+}
+}
+}
+}
+}
+}
+.church-thirst{
+    @include containers-responsive-w (100%,100%,auto,white);
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+.card-church{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 50px;
+    overflow-x: hidden;
+.card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 410px;
+    margin: 0px 30px;
+    transform-origin: center center ;
+    transform-style: preserve-3d;
+    transition-timing-function: ease;
+    transition-duration: .2s;
+}
+.card-1{
+    transform: translateX(-700px);
+}
+.card-2{
+    transform: translateX(700px);
+}
+}
+}
+@import '../headquarters-responsive-page/mobile-headquarters';
+@import '../headquarters-responsive-page/tablet-headquarters';

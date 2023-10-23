@@ -1,0 +1,13 @@
+@import'location-mixin';
+@import'location-variables';
+.location-instruction{
+    div{
+        a{
+            i{
+                font-size: 54px;
+                color: $color-hover;
+            }
+   
+        }
+    }
+}

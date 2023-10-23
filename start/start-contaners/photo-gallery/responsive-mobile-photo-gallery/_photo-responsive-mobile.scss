@@ -1,0 +1,19 @@
+@import'../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../componentes-standard/menu-footer/resposive-menu';
+.photo-gallery{
+@include responsive(mobile){
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0 40px;
+.photos{
+
+ max-width: 100%;
+ padding: 0px;
+.photo{
+    width: 100%;
+}
+}
+
+}
+}

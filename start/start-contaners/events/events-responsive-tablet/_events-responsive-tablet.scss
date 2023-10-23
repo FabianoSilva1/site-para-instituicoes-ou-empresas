@@ -1,0 +1,24 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+@include responsive(tablet){
+.events-article{
+    flex-direction: column !important;
+    align-items: center;
+    padding: 0px 70px;
+.events{
+    width: 100%;
+    max-width: 100%;
+
+.event{
+    width: 100%;
+    max-width: 100%;
+img{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 720px !important;
+}
+}
+}
+}
+        
+}

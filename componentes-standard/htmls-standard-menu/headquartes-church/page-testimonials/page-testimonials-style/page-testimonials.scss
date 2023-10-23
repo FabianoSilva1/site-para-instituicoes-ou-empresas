@@ -1,0 +1,47 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.container-testimonials{
+    @include containers-responsive-w (100%,100%,auto,$color-font);
+    padding: 100px;
+article{
+    margin-bottom: 30px;
+h1{
+    @include text (22px,$bgcolor,$font-roboto);
+    font-weight: 600;
+    margin-bottom: 20px;
+i{
+    font-size: 55px;
+    margin-right: 10px;
+    color: $color-hover;
+}
+
+}
+p{
+    @include text($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: $font-5;
+}
+span{
+    margin-top: 20px;
+    text-align: end;
+    width: 100%;
+    display: block;
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: bold;
+    line-height: $font-5;
+}
+}
+}

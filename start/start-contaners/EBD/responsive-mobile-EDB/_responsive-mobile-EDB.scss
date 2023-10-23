@@ -1,0 +1,110 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+
+@include responsive(mobile){
+.buttons-EBD{
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+div{
+    width: 50%;
+    max-width: 100%;
+    margin: 0 !important;
+    align-items: center;
+    padding: 10px;
+h3{
+    font-size: $font-4;
+    margin: 5px 0px;
+}
+p{
+    font-size: 13px;
+}
+}
+}
+#youtube{
+    padding: 100px 20px;
+.primary-video{
+    height: 190px;
+
+}
+.youtube-interaction{
+    flex-direction: column;
+    align-items: flex-start;
+div{
+    width: 100%;
+    max-width: 100%;
+i{
+    margin-bottom: 20px;
+}
+p{
+    width: 100%;
+    max-width: 100%;
+    font-size: 13px;
+    
+}
+
+}
+button{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+a{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    display: flex;
+}
+}
+
+}
+.videos-EBD{
+div{
+    display: none;
+iframe{
+  
+    max-width: 100%;
+
+    padding: 20px ;
+} 
+
+&:nth-of-type(1),&:nth-of-type(2){
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+p{
+    display: none;
+}
+h1{
+    margin: 0px;
+    padding:0px 20px;
+
+}
+span{
+    padding:0px 20px;
+}
+}
+}
+}
+}
+#magazine{
+padding: 100px 30px;
+h1{
+ max-width: 100%;
+.collection-animation-magazine{
+    max-width: 100%;
+}
+}
+p{
+    font-size: 13px;
+}
+.magazines{
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+}

@@ -1,0 +1,18 @@
+@import'../../../../../componentes-standard/menu-footer/variables';
+@import'../../../../../componentes-standard/menu-footer/mixin';
+
+.photo-gallery{
+  
+    .photos{
+       
+        .photo{
+            div{
+                p{
+                    @include text ($font-4,$color-font-5,$font-roboto);
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+        }
+        }
+    }
+}

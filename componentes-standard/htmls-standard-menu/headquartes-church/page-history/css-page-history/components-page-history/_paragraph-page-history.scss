@@ -1,0 +1,44 @@
+@import '../../../../../menu-footer/variables';
+@import '../../../../../menu-footer/mixin';
+.icos-interation{
+div{
+p{
+    text-align: center;
+    line-height:  $font-5;
+    @include text ($font-pattern-3,$color-font-5, $font-roboto);
+}
+}
+}
+
+.sec-history{
+p{
+ text-align: center;
+ @include text ( $font-pattern-3, $color-font-5, $font-roboto);
+ line-height: $font-5;
+ margin-bottom: 10px;
+ filter: blur(15px);
+}   
+}
+.photo-history{
+p{
+    @include text ( 14px, $color-font-5, $font-roboto);
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    opacity: 0;
+}
+}
+.history-pastores{
+div{
+article{
+figcaption{
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+}
+}
+}
+}

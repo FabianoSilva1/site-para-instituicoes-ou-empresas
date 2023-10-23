@@ -1,0 +1,28 @@
+@import'../../../../menu-footer/mixin';
+@import'../../../../menu-footer/variables';
+@include responsive(mobile){
+.boards{
+    margin: 50px 0px;
+    justify-content: space-around;
+div{
+    width: 150px;
+    height: 320px;
+
+article{
+    flex-direction: column;
+div{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+figure{
+    height: 100%;
+}
+}
+figcaption{
+    text-align: center;
+    padding: 10px 0px;
+}
+}
+}
+}
+}

@@ -1,0 +1,70 @@
+@import'church-variables';
+@import'church-mixin';
+
+.church-sectors{
+  
+    div{
+     p{
+        @include text ($font-pattern-3,$color-paragraphs,$font-roboto);
+        font-weight: 400;
+        text-align: center;
+        line-height: 22px;
+     }
+       }
+    }
+    .church-history-img{
+      .history-background{
+          
+          article{
+            p{
+              @include text(15px,$color-font,$font-roboto);
+              font-weight: 400;
+              line-height: 27px;
+              text-align: center;
+              transition: all .3s;
+            }
+          }
+          
+      }
+  }
+    .article-departments-church{
+      article{
+      
+        
+          .paraghrap{
+           @include text ($font-pattern-3,$color-paragraphs,$font-roboto);
+           font-weight: 400;
+            margin-bottom: 40px;
+           max-width: 90%;
+           text-align: center;
+           line-height: $font-5;
+      }}
+    }
+
+      .articles{
+        .article{
+          
+            p{
+               
+                @include text($font-pattern-3,#4a4a4a,$font-noto-sans);
+                padding: 0px;
+               line-height: $font-5;
+                margin: 0px;
+              
+                
+            }
+        }
+    }
+    .church-cults-localizations{
+      .background-cults-localization{
+          p{
+         @include text($font-pattern-3,$color-paragraphs,$font-roboto);
+         font-weight: 400;
+         margin-bottom: 30px;
+      
+      }
+  }
+  }
+
+  
+

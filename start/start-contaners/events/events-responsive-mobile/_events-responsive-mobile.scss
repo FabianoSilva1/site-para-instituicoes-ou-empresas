@@ -1,0 +1,12 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+.events-article{
+@include responsive(mobile){
+    flex-direction: column;
+    align-items: center;
+.events{
+    width: 100%;
+    max-width: 100%;
+}
+}
+}

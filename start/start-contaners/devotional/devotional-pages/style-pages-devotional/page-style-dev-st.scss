@@ -1,0 +1,103 @@
+@import'../../../../../componentes-standard/menu-footer/menus';
+@import'../../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../../componentes-standard/menu-footer/variables';
+@import'../../../../../componentes-standard/container-page/container';
+@import'../../../../../componentes-standard/links/links';
+@import'../../../../../componentes-standard/menu-footer/footer';
+@import'../../../../../componentes-standard/animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.cont-pag-dev{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 100px;
+    height: auto;
+    max-width: 100%;
+    justify-content: space-evenly;
+.devotional{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+.dev-figure{
+article{
+    max-width: 100%;
+figure{
+
+    width: 850px;
+    height: 850px;
+    max-width: 100%;
+    background: url(../../../../../imgs/corpo.jpg) no-repeat center center ;
+    background-size: cover;
+margin-bottom: 50px
+}
+span{
+    @include text ($font-4,$color-font-5,$font-roboto);
+
+}
+}
+}
+.related-articles-dev{
+    margin-top: 40px;
+.tl-article{
+    @include text (22px, $color-font-5, $font-noto-sans);
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+div{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+margin-bottom:100px ;
+    max-width: 100%;
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  
+&:nth-of-type(2){
+    margin: 0px 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    max-width: 100%;
+a{
+    max-width: 100%;
+    text-decoration: none;
+figure{
+    width: 260px;
+    height: 260px;
+    background: url('../../../../../imgs/corpo.jpg') no-repeat center center;
+    background-size: cover;
+}
+h1{
+    @include text  (22px, $color-font-5,$font-noto-sans);
+    font-weight: 500;
+    padding: 20px;
+}
+}
+}
+span{
+    padding: 0px 20px 20px 20px;
+    @include text  ($font-4, $color-font-5,$font-roboto);
+    font-weight: 200;
+}
+}
+}
+}
+}
+}
+@import '../style-pages-devotional/responsive-pages-dev/tablet-pages-dev';
+@import '../style-pages-devotional/responsive-pages-dev/mobile-pages-dev';

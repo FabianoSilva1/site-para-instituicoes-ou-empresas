@@ -1,0 +1,21 @@
+@import'../../componentes-standard/menu-footer/mixin';
+@import'../../componentes-standard/menu-footer/variables';
+
+.map-localization {
+.components-infor {
+div {
+&:nth-child(1) {
+a{ 
+figure {
+@include responsive(mobile){
+    width: 250px;
+    height: 200px;
+    margin: 0;
+}       
+                    
+                    
+}
+}
+}}
+}
+}

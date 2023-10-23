@@ -1,0 +1,100 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.card-article{
+@include containers-responsive-w(100%,100%,auto,$color-font);
+padding: 100px 0px;
+display: flex;
+flex-direction: row;
+flex-shrink: 0;
+flex-wrap: wrap;
+justify-content: center;
+article{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+figure{
+    width: 248px;
+    height: 248px;
+    border-radius: 50%;
+    background: url(../../../../../imgs/user.jpg) 53% 39%;
+    background-size: cover;
+}
+figcaption{
+display: flex;
+width: 100%;
+align-items: center;
+flex-direction: column;
+margin: 50px 0px;
+padding: 0px 30px;
+h1{
+    @include text ($font-6, $color-font-5,$font-poppins);
+    line-height: $font-9;
+    font-weight: 400;
+}
+h3{
+    @include text ($font-pattern-3, $color-hover,$font-roboto);
+    line-height: $font-5;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    margin-top: 10px;
+    @include text ($font-pattern-3, $color-font-5,$font-roboto);
+    line-height: $font-5;
+    font-weight: 400;
+    text-align: center;
+}
+}
+}
+}
+.button-departments{
+    @include containers-responsive-w(100%,100%,auto,transparent);
+    padding: 50px 0px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+p{
+    @include text ($font-3,$color-font-5,$font-roboto);
+    font-weight: 500;
+    line-height: $font-4;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+a{
+    text-decoration: none;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    padding: 15px 30px;
+    background-color: $bgcolor;
+    transition: all .3s;
+&:hover{
+    background-color: #252525;
+}
+i{
+    margin-right: 10px;
+}
+}
+}
+}
+
+@import '../responsive-department/responsive-mobile-department';
+@import '../responsive-department/responsive-tablet-department';

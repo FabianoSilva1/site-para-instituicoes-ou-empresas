@@ -1,0 +1,30 @@
+@mixin containers ($width,$heigth,$backgroud) {
+    width: $width;
+    height: $heigth;
+    background-color: $backgroud;
+}
+
+@mixin text($font, $color, $font-fam){
+    font-size: $font;
+    color: $color;
+    font-family: $font-fam;
+}
+
+
+@mixin containers-responsive-w ($width,$max-w,$heigth,$backgroud) {
+    width: $width;
+    max-width: $max-w;
+    height: $heigth;
+    background-color: $backgroud;
+}
+@mixin containers-responsive-h ($heigth,$max-h,  $width,$backgroud) {
+    height: $heigth;
+    max-height: $max-h;
+    width: $width;
+    background-color: $backgroud;
+}
+@mixin icos ($font,$color){
+    font-size: $font;
+    color: $color;
+}
+

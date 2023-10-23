@@ -1,0 +1,112 @@
+@import'../../componentes-standard/menu-footer/mixin';
+@import'../../componentes-standard/menu-footer/variables';
+//responsividade dos paragrafos dos links
+.box-links-paragraphs {
+div {
+&:nth-child(2) {
+p{
+&:nth-of-type(1){
+@include responsive (mobile){
+    @include text ($font-3, $color-font-25, $font-noto-sans);
+    margin: 0;
+}   
+}
+&:nth-of-type(2){
+@include responsive (mobile){
+    font-size: $font-5;
+    margin: 0;
+}   
+}
+}
+}}
+}
+//responsividade dos paragrafos dos destaques
+.highlights {
+p{
+    @include responsive(mobile){
+    font-size: 13px;
+    padding: 0px 5px;
+    text-align: center;
+}
+}
+}
+////responsividade dos paragrafos da seção localização
+.map-localization {
+ 
+.components-infor {
+div {
+&:nth-child(2) {
+p{
+@include responsive(mobile){
+    font-size: 13px;
+    line-height: 20px;
+}
+}
+}
+}
+}
+}
+// responsividade paragrafos youtube
+.youtube {
+.background-youtube {
+.youtube-presentation {
+p{
+@include responsive(mobile){
+    font-size: 13px;
+}
+} 
+}
+}
+    
+   
+}
+.father-events {
+p{
+    padding: 0 50px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+}
+}
+.studies {
+p{
+@include responsive(mobile){
+    font-size: 13px;
+    padding: 0px 10px;
+
+}
+}
+}
+.content-photos {
+div {
+&:nth-of-type(1) {
+p {
+    font-size: 13px;
+    padding: 0 40px;
+}
+}
+}
+}
+.container-acceptance {
+
+.box-acceptance {
+p{
+@include responsive(mobile){
+    font-size: 13px;
+    padding: 0px 50px 0px 20px;
+    margin: 0px;
+}
+}
+}
+}
+.container-login{
+div{
+&:nth-of-type(1){
+p{
+    font-size: 13px;
+    width: 100%;
+}
+}
+}
+}
+        

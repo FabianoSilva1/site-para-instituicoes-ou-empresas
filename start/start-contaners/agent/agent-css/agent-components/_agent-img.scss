@@ -1,0 +1,17 @@
+@import 'agent-mixin';
+@import 'agent-variables';
+
+.img{
+    background: $bgcolor url("../../../../imgs/corpo.jpg") center center no-repeat;
+    background-size: cover;
+}
+#container-agent-hidden{
+    position: relative;
+    img{
+        margin-top: 80px;
+        width: 1000px;
+        max-width: 100%;
+        height: calc( 100% + 300px );
+   
+    }
+}

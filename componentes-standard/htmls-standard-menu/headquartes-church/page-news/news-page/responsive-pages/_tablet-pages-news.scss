@@ -1,0 +1,27 @@
+@import '../../../../../menu-footer/mixin';
+@import '../../../../../menu-footer/variables';
+@include responsive(tablet){
+.news{
+    flex-direction: column;
+    padding: 100px 100px;
+.news-emphasis{
+    margin: 0;
+    margin-bottom:30px ;
+article{
+figure{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: 50% 100%;
+}
+}
+p{
+    font-size: 13px !important;
+    line-height: $font-4;
+}
+}
+.links{
+    margin: 50px 0px 0px 0px;
+}
+}
+}

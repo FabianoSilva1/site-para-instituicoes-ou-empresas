@@ -1,0 +1,38 @@
+@import '../../../../../componentes-standard/menu-footer/variables';
+@import '../../../../../componentes-standard/menu-footer/mixin';
+@include responsive(tablet){
+.study{
+    margin-top: 80px;
+    flex-direction: column ;
+    padding: 0px 50px;
+article{
+figure{
+    height: 400px !important;
+}
+figcaption{
+p{
+    font-size: 13px;
+}
+.author-study{
+    flex-direction: column;
+    align-items: center;
+.althor-image-default-setting{
+    width: 150px;
+    max-width: 100%;
+    height: 150px !important;
+}
+div{
+    margin: 0;
+p{
+    line-height: $font-4;
+}
+}
+}
+    
+}
+}
+.links{
+    margin-top: 80px;
+}
+}
+}

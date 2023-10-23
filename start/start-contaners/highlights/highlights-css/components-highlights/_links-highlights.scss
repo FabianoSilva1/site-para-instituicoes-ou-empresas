@@ -1,0 +1,41 @@
+@import'mixin-highlights';
+@import'variables-highlights';
+.highlights-article {  
+    .hlts{
+      .hlt{
+        .link-highlights-photo{
+            width: 100%;
+            height: 400px;
+          
+        }
+        div{
+            h1{
+             a{
+               text-decoration: none;
+               @include text (22px,$color-font-3,$font-noto-sans);
+               font-weight: 500;
+               transition: all .3s;
+               &:hover{
+                 color: $color-hover
+               }
+             }
+            }
+            small{
+
+                a{
+                   @include text (18px,$color-font-3,$font-roboto);
+                   text-decoration: none;
+                   transition: all .3s;
+                   &:hover{
+                      color:$color-hover;
+                   }
+                }
+             }
+           }
+      }
+    }
+  }
+    
+      
+
+

@@ -1,0 +1,26 @@
+@import '../../../../../menu-footer/variables';
+@import '../../../../../menu-footer/mixin';
+.sec-pastor{
+div{
+&:nth-of-type(1){
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    line-height: $font-5;
+    margin-bottom: 10px;
+    font-weight: 400;
+}    
+}
+}   
+}
+.history-pastor-church{
+div{
+    
+p{
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    font-weight: 400;
+    line-height: $font-5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+}
+}

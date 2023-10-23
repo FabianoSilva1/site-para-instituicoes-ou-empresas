@@ -1,0 +1,103 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@include responsive (tablet){
+    .icos-interation{
+        margin: 80px 0px;
+        flex-wrap: wrap;
+        height: auto;
+        max-width: 100%;
+        width: auto;
+        flex-direction: row;
+        padding: 0px 80px;
+    
+    div{
+        margin: 0px;
+        padding: 20px;
+        max-width: 100%;
+        flex: 1 1 250px;
+    p{
+        font-size: 13px;
+    }
+    }
+    }
+    .sec-history{
+        padding: 100px ;
+    p{
+        font-size: 13px;
+    }
+    }
+    .video-youtube{
+    
+    .background-video{
+    div{
+        width: 510px;
+        max-width: 100%;
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+    }
+    }
+    }
+    .photo-history{
+        padding: 100px 60px 200px 60px;
+    p{
+        text-align: center;
+    }
+    div{
+        height: auto;
+    figure{
+        margin: 5px 5px;
+        width: 125px;
+        height: 86px;
+    }
+    }
+    }
+    .history-pastores{
+        padding: 50px 20px;
+    
+    div{
+        padding: 0px;
+    article{
+    figure{
+        width: 50px;
+        height: 50px;
+    }
+    figcaption{
+        margin: 0px 10px;
+    p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    }
+    }
+    }
+    }
+    .container-hidden-photos{
+    .close-container-hidden{
+        top: 20px;
+        right: 20px;
+    }
+    div{
+    &:nth-of-type(2){
+        width: 92%;
+        padding: 80px 0px;
+    figure{
+        max-height: 440px;
+    
+    }
+    }
+    
+    }
+    .button-press{
+        top: auto;
+    
+    }
+    .next{
+        right:20px;
+    }
+    .previus{
+        left: 30px;
+    }
+    }
+    }

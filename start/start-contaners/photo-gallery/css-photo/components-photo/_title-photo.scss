@@ -1,0 +1,30 @@
+@import'../../../../../componentes-standard/menu-footer/variables';
+@import'../../../../../componentes-standard/menu-footer/mixin';
+
+
+.photo-gallery{
+  
+    .photos{
+       
+        .photo{
+            div{
+            h1{
+                margin: 10px 0px 10px 0px;
+                a{
+                    text-decoration: none;
+                    @include text ($font-22,$color-font-5,$font-noto-sans);
+                    font-weight: 500;
+                    line-height: 26px;
+                    transition: all .3s;
+                    &:hover{
+                        color: $color-hover;
+                    }
+                  
+                    
+                }
+            }
+        }
+        }
+    }
+
+}

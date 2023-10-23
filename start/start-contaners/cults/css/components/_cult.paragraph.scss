@@ -1,0 +1,50 @@
+@import'cult-mixin';
+@import'cult-variables';
+.container-cards{
+    
+.card{
+
+.back{
+p{
+    margin: 10px 0px 10px 0px;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+}
+span{
+    @include text (12px,$color-hover,$font-roboto);
+}
+}
+}
+}
+.cults-days{
+.cults-days-background{
+p{
+@include text ($font-pattern-3,#3d3d3d,$font-roboto);
+    font-weight: 400;
+    margin-bottom: 60px;
+              
+}
+.days-cults{
+#days{
+.day{
+p {
+@include text ($font-4, $color-font-5, $font-roboto);
+    font-weight: 700;
+    line-height: 31px;
+    margin: 0;
+
+span {
+    font-weight: 400;
+    color: $color-hover;
+                        }
+                    }
+                }
+            }
+          }
+      }
+  }
+  
+
+
+
+
+

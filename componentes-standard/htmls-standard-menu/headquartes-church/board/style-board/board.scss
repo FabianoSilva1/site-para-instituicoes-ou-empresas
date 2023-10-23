@@ -1,0 +1,91 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../animation-text-page/propriets-ani';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover; 
+}
+
+.pastor-senior{
+    @include containers-responsive-w (100%,100%,auto,$color-font);
+    padding: 100px 80px;
+article{
+    display: flex;
+    flex-direction: row;
+figure{
+    width: 354px;
+    height: 354px;
+    background: url(../../../../../imgs/user.jpg) 57% 47% no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+figcaption{
+    margin-left: 30px;
+    margin-top: 30px;
+h1 {
+    font-weight: 700;
+    line-height: $font-6;
+    margin-bottom: 10px;
+    @include text ($font-4,$color-font-5,$font-roboto);
+}
+p {
+    font-weight: 500;
+    line-height: $font-6;
+    @include text ($font-4,rgb(0,0,0,0.4),$font-roboto);
+}
+}
+
+}
+}
+.boards{
+    @include containers-responsive-w (100%,100%,auto,$color-font);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 80px 0px 150px 0px;
+div{
+    width: 660px;
+    height: 260px;
+    margin-bottom: 30px;
+article{
+    display: flex;
+    flex-direction: row;
+figure{
+    width: 260px;
+    height: 260px;
+    background: url(../../../../../imgs/user.jpg) 57% 47% no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+figcaption{
+padding: 20px 10px;
+h1 {
+    font-weight: 700;
+    line-height: $font-6;
+    margin-bottom: 10px;
+    @include text ($font-4,$color-font-5,$font-roboto);
+}
+p {
+    font-weight: 500;
+    line-height: $font-6;
+    @include text ($font-4,rgb(0,0,0,0.4),$font-roboto);
+}
+}
+}
+    
+}
+}
+@import '../responsive-board/respons-mobile-board';
+@import '../responsive-board/respons-tablet-board';

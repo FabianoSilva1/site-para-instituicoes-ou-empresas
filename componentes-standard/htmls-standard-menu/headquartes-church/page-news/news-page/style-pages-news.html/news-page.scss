@@ -1,0 +1,75 @@
+@import '../../../../../menu-footer/menus';
+@import '../../../../../menu-footer/footer';
+@import '../../../../../container-page/container';
+@import '../../../../../menu-footer/mixin';
+@import '../../../../../menu-footer/variables';
+@import '../../../../../../componentes-standard/links/links';
+@import '../../../../../animation-text-page/propriets-ani';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.news{
+    padding: 150px 0px;
+    @include containers-responsive-w(100%,100%,auto,$color-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+.news-emphasis{
+    width: 850px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+figure{
+    width: 850px;
+    height: 500px;
+    max-width: 100%;
+    background: url(../../../../../../imgs/corpo.jpg);
+    background-size: 100%;
+}
+figcaption{
+    display: flex;
+    flex-direction: column;
+h1{
+    @include text ($font-7,$color-font-5,$font-overlock);
+    font-weight: 400;
+    margin: 20px 0px;
+    line-height: $font-8;
+}
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    line-height: $font-5;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+span{
+a{
+    text-decoration: none;
+    @include text ($font-4,$color-font-5,$font-roboto);
+    font-weight: 400;
+    transition: all .3s;
+&:hover{
+    color: $color-hover;
+}
+}
+    @include text ($font-4,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: $font-6;
+}
+}
+}
+.links{
+    margin-left: 10px;
+}
+
+}
+@import '../responsive-pages/mobile-pages-news';
+@import '../responsive-pages/tablet-pages-news';

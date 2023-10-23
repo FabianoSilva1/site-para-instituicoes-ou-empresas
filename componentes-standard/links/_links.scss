@@ -1,0 +1,137 @@
+@import '../menu-footer/variables';
+@import '../menu-footer/mixin';
+
+.links{
+    @include containers-responsive-w(350px, 100%, 100%, $color-hover);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+@include responsive(mobile){
+    width: 100%;
+    max-width: 100%;
+    margin-bottom:100px ;
+    padding: 40px 20px;
+}
+@include responsive(tablet){
+    width: 100%;
+    max-width: 100%;
+}
+
+div{
+a{
+    text-decoration: none
+}
+}
+h3{
+    @include text (22px,$color-font,$font-noto-sans);
+    font-weight: 400;
+    line-height:$font-7;
+    margin-bottom: 20px;
+    padding-bottom: $font-3;
+    border-bottom: 1px solid $color-font;
+@include responsive(mobile){
+    font-size: $font-pattern-3
+}
+&:nth-of-type(2){
+    margin-top: 50px;
+}
+&:nth-of-type(3){
+    margin-top: 50px;
+}
+&:nth-of-type(4){
+    margin-top: 50px;
+}
+}
+.links-news{
+    display: flex;
+    flex-direction: column;
+a{
+       
+    line-height: $font-7;
+    @include text ($font-17,$color-font,$font-roboto);
+    font-weight: 400;
+    transition: all .3s;
+@include responsive(mobile){
+    font-size: 18px;
+}
+&:hover{
+    color: $bgcolor;
+}
+}
+}
+.links-recents{
+    display: flex;
+    flex-direction: column;
+a{
+    @include text ($font-pattern-3,$color-font,$font-noto-sans);
+    line-height: $font-4;
+    margin-bottom: 5px;
+    font-weight: 500;    
+}
+small{
+    @include text (13px,$color-font-3, $font-noto-sans);
+    line-height: $font-4;
+    font-weight: 400;
+}
+}
+.links-social-network{        
+    text-align: center;     
+a{
+    display: inline-block;
+    margin: 20px ;
+    color:$color-font;
+    font-size: 36px;
+@include responsive(mobile){
+    margin: 10px;
+}
+i{
+    transition: all .6s;
+}
+&:nth-of-type(1){
+i{
+&:hover{
+    color: red;
+}
+                
+}
+}
+&:nth-of-type(2){
+i{
+&:hover{
+    color: #FE33FF;
+}
+}
+}
+&:nth-of-type(3){
+i{
+&:hover{
+    color: #00ACF1;
+}                          
+}
+}
+}
+}
+.links-login{
+input{
+    border: 1px solid rgba(0, 0, 0, 0.312);
+    margin-top: 20px;
+    height: 30px;
+    outline:none;
+    border-radius: 3px;
+    width: 100%;
+    padding-left: 10px;
+    max-width: 100%;
+}
+a{
+    display: block;
+    padding: 10px;
+    @include text($font-pattern-3,$color-font,$font-roboto);
+    text-align: center;
+    background-color: $bgcolor;
+    border-radius: 3px ;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid white;
+}
+}
+}

@@ -1,0 +1,92 @@
+@import'church-variables';
+@import'church-mixin';
+
+
+.church-sectors{
+  
+    div{
+       .title{
+        @include text($font-pattern-3,$bgcolor,$font-noto-sans);
+        font-weight: 500;
+        margin: 5px 0px 10px 0px;
+        transition: all .3s;
+        &:hover{
+            color: $color-hover;
+        }
+       }
+    }
+}
+
+.church-history-img{
+    .history-background{
+        
+        article{
+          h1{
+            transition: all .3s;
+            @include text(32px,$color-font,$font-noto-sans);
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+        }
+        
+    }
+}
+.article-departments-church{
+    article{
+    h1{
+        @include text (32px, $bgcolor,$font-noto-sans);
+        font-weight: 500;
+        margin-bottom:50px ;
+    }
+    .articles{
+        .article{
+            h2,p{
+                text-align: center;
+            }
+            h2{
+                margin: 10px;
+                @include text(17px,#4a4a4a,$font-noto-sans);
+                font-weight: 600;
+                
+            }
+        }
+    }
+}
+}
+.church-cults-localizations{
+    .background-cults-localization{
+        h1{
+       @include text(32px,$bgcolor,$font-noto-sans);
+       font-weight: 500;
+       margin-bottom:20px ;
+    }
+    .church-container-links{
+       
+        div{
+            &:nth-of-type(2){
+             h4{
+                @include text($font-pattern-3,$color-paragraphs,$font-roboto);
+                font-weight: 400;
+                margin-bottom: 10px;
+             }
+             a{
+                width: 100%;
+                display: block;
+                background: $bgcolor;
+                border-radius: 5px;
+                text-align: center;
+                text-decoration: none;
+                margin-bottom: 30px;
+                @include text ($font-pattern-3,$color-font,$font-roboto);
+                font-weight: 400;
+                padding: 13px 0px 13px 0px;
+                transition: all .2s;
+                &:hover{
+                    background-color: #2F2F2F;
+                }
+            }
+        }
+    }
+}
+    }}

@@ -1,0 +1,44 @@
+@import '../../../../../menu-footer/variables';
+@import '../../../../../menu-footer/mixin';
+h1{
+    @include text ($font-8,$color-font-5,$font-noto-sans);
+    font-weight: 500;
+    line-height: 50px;
+}
+.sec-history{
+h1{
+    margin-bottom: 30px;
+    transform: translatey(-60px);
+    transition: all .2s;
+    opacity: 0;
+
+}   
+}
+.photo-history{
+h1{
+    transform: translatey(-60px);
+    transition: all .2s;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+}
+.history-pastores{
+h1{
+    margin-bottom: 100px;
+    transition: all .3s;
+    // opacity: 0;
+    transform: translateY(-60px);
+}
+div{
+article{
+figcaption{
+h2{
+@include text ($font-pattern-3,#4a4a4a,$font-noto-sans);
+font-weight: 500;
+line-height: 22px;
+margin-bottom: 5px;
+}
+}
+}
+}
+}

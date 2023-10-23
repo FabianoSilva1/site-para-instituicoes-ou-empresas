@@ -1,0 +1,96 @@
+@import'../../componentes-standard/menu-footer/mixin';
+@import'../../componentes-standard/menu-footer/variables';
+////responsividade dos titulo dos links
+.box-links-paragraphs {
+div {
+&:nth-child(2) {
+h3{
+@include responsive (mobile){
+    @include text ($font-4, $color-font-24, $font-noto-sans);
+    line-height: 50px;
+}   
+}
+}}
+}
+////responsividade dos titulo dos destaques
+.highlights {
+h3{
+@include responsive(mobile){
+    font-size: 38px;
+    font-weight: 200;
+} 
+}
+}
+////responsividade dos titulo da seção localização
+.map-localization {
+ 
+.components-infor {
+div {
+&:nth-child(2) {
+h3{
+@include responsive(mobile){
+    font-size: 38px;
+}
+}
+}
+}
+}
+}
+.select-video {
+p{
+@include responsive(mobile){
+    margin: 0 !important;
+}
+}
+
+}
+.background-youtube {
+    
+.select-video {
+.videos-Youtube{
+.box-video{
+h4{
+@include responsive(mobile){
+    padding: 0;
+}    
+}
+}
+}
+}
+}
+.father-events {
+h3{
+@include responsive (mobile){
+    font-size: 38px;
+}
+}  
+}
+.studies {
+h1{
+@include responsive(mobile){
+    padding: 0px 5px;
+    font-size: 38px;
+}
+}
+.studies-matters {
+div{    
+h3{
+a{
+    padding: 0px;
+}
+}    
+}
+}
+}
+.container-acceptance {
+
+.box-acceptance {
+h1{
+@include responsive(mobile){
+    font-size: 24px;
+    padding: 0px 0px 0px 20px;
+}
+}
+}
+}
+    

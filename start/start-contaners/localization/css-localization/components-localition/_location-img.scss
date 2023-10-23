@@ -1,0 +1,6 @@
+@import'location-mixin';
+@import'location-variables';
+.localition-church{
+background: $bgcolor url("../../../../imgs/image-box-map.PNG") center 10% no-repeat fixed;
+background-size: cover;
+}

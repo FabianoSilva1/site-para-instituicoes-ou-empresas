@@ -1,0 +1,27 @@
+@import'study-mixin';
+@import'study-variables';
+
+.study-container{
+    
+    .studys{
+      
+        .study{
+article{
+.button-study{
+  padding: 10px 10px 10px 10px;
+  border:  1px solid #ccc;
+  width: 154px;
+  text-align: center;
+  text-decoration: none;
+  @include text (14px, $color-font-3, $font-roboto);
+  transition: all .3s ease;
+  font-weight: 500;
+  margin-top: 10px;
+  &:hover{
+  color: $color-hover;
+}
+}
+}
+}
+}
+}

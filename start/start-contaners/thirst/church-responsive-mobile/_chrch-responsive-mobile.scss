@@ -1,0 +1,112 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+body{
+@include responsive(mobile){
+    overflow-x: hidden;
+}
+}
+.church-sectors{
+@include responsive(mobile){
+height: 700px;
+padding: 0px 45px;
+flex-direction: column;
+div{
+p{
+    font-size: 13px;
+}
+}
+}
+}
+.church-history-img{
+@include responsive(mobile){
+    height: 1000px;
+.history-background{
+flex-direction: column;
+overflow-x: hidden;
+figure{
+    width: 200px;
+    height: 200px;
+}
+article{
+h1{
+    font-size: 24px;
+
+}
+p{
+    padding: 0 10px;
+}
+}
+}
+}
+}
+.article-departments-church{
+@include responsive(mobile){
+    height: auto;
+    padding: 100px 10px;
+
+article{
+    height: 100%;
+h1{
+    font-size: $font-5;
+    padding: 0px 20px;
+    text-align: center;
+}
+.paraghrap{
+    font-size: 13px;
+    line-height: $font-4;
+}
+.articles{
+ 
+    height: 70%;
+    flex-direction: column;
+.article{
+    height: 500px;
+    margin: 0;
+    padding: 10px;
+figure{
+    height: 300px;
+}
+h1{
+    font-size: 17px;
+}
+p{
+    font-size: 13px;
+    line-height: 20px;
+}
+}
+}
+}
+}
+}
+.church-cults-localizations{
+@include responsive(mobile){
+    height: 1000px;
+.background-cults-localization{
+    padding: 0px 20px;
+p{
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+}
+h1{
+    font-size: $font-5;
+}
+.church-container-links{
+    flex-direction: column;
+    align-items: center;
+#card{
+    width: 100%;
+    margin: 0;
+    height: 400px;
+
+}
+div{
+h4{
+
+    font-size: 13px !important;
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,12 @@
+@import'cult-mixin';
+@import'cult-variables';
+
+
+.cults-days{
+    @include containers-responsive-b (100%,100%,909px, $bgcolor url('../../../../imgs/corpo.jpg') center center no-repeat fixed );
+    background-size: cover;
+}
+.img{
+    background: url("../../../../imgs/corpo.jpg") center center no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,82 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+
+.text-church{
+p{
+    @include text ($font-pattern-3 , $color-font-5, $font-roboto);
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+}
+}
+.senior-pastor-sc{
+p{
+    @include text  ($font-pattern-3, $color-font-5, $font-roboto);
+    font-weight: 400;
+    filter: blur(10px);
+    text-align: justify;
+    line-height: $font-5;
+    margin-bottom: 70px;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    transition: all .3s;
+}
+}
+.history-church{
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: $font-5;
+    width: 80%;
+    text-align: center;
+}
+
+span{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight:700 ;
+    margin-top: 50px;
+    
+}
+}
+.board-headquartes{
+p{ 
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    padding: 0px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+}
+.board-headquartes{
+.offices-members{
+.slide-officer{
+.officer{
+div{
+span{
+    @include text (14px, #4a4a4a, $font-roboto);
+}
+}
+}
+}
+}
+}
+.church-thirst{
+.paraghaph-church-thirst{
+    @include text (14px, #4a4a4a, $font-roboto);
+    width: 45%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card-church{
+.card{
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: 25px;
+
+    text-align: center;
+}
+}
+}
+}
+

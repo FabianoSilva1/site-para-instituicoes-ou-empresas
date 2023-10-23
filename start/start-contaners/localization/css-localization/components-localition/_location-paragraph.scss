@@ -1,0 +1,31 @@
+@import'location-mixin';
+@import'location-variables';
+.church-location{
+    
+
+            p{
+                &:nth-child(2){
+                    @include text(15px,#cecece,$font-noto-sans);
+                    font-weight: 500;
+                    width: 800px;
+                    text-align: center;
+                    line-height: 26px;
+                    margin-top: 20px;
+                }
+ 
+        }
+    
+    }
+.location-instruction{
+    div{
+        p{
+        font-size: 18px;
+        color: $color-font;
+        line-height: 24px;
+        width: 250px;
+        text-align: center;
+        font-weight: 400;
+        }
+    }
+}
+

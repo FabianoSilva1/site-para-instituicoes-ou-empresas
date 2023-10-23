@@ -1,0 +1,23 @@
+@import'study-mixin';
+@import'study-variables';
+
+.study-container{    
+.studys{     
+.study{
+article{
+a{
+text-decoration: none;
+            h1{
+                @include text($font-22,$color-font-3,$font-noto-sans);
+                font-weight: 500;
+                transition:all .3s ease;
+                margin: 10px 0px 10px 0px;
+                &:hover{
+                    color: $color-hover; 
+                }
+            }
+        }
+        }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../../../../menu-footer/variables';
+@import '../../../../../menu-footer/mixin';
+
+.sec-pastor{
+div{
+&:nth-of-type(1){
+h1{
+    @include text ($font-8,$color-font-5,$font-noto-sans);
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    @include text (17px,$color-font-5,$font-noto-sans);
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+}   
+}
+}

@@ -1,0 +1,23 @@
+@import'study-mixin';
+@import'study-variables';
+
+.img{
+  background: $bgcolor url("../../../../imgs/corpo.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.study-container{
+   
+
+    .studys{
+      .study{
+        figure{
+            @include containers-responsive-b (100%,728px,409px, $bgcolor url("../../../../imgs/corpo.jpg") 50% 50% no-repeat) ;
+            background-size: cover;
+
+
+        }
+     
+      }
+    }
+}

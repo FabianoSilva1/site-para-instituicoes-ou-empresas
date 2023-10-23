@@ -1,0 +1,19 @@
+@import '../../../componentes-standard/menu-footer/mixin';
+@import '../../../componentes-standard/menu-footer/variables';
+.container-image-youtube {
+    // background-image: url('../../imgs/background-youtube.png');
+    background-size: cover;
+
+}
+
+.youtube-plates{
+.container{
+.front{
+    background-image: url('../../imgs/exmplos.png');
+}
+}
+}
+.backgound-youtube-container{
+    background: url("../../imgs/igreja.png") center center no-repeat;
+    background-size: 100%;
+}

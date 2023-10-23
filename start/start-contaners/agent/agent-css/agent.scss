@@ -1,0 +1,66 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/container-page/container';
+@import'agent-components/agent-title';
+@import'agent-components/agent-icos';
+@import'agent-components/agent-paragraph';
+@import'agent-components/agent-img';
+@import'../../../../componentes-standard/menu-footer/mixin';
+@import'../../../../componentes-standard/menu-footer/variables';
+@import'agent-components/agent-button';
+@import'../../../../componentes-standard/menu-footer/footer';
+@import'../../../../componentes-standard/animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    z-index: 2;
+}
+.downloand-agent {
+    @include containers-responsive-w (100%, 100%, 800px, $color-font);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 90px;
+    align-items: center;
+@include responsive(tablet){
+    height: auto;
+}
+
+    div {
+        &:nth-of-type(1) {
+            padding: 20px;
+            @include containers-responsive-w (540px, 100%, 437px, $color-font-1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+    }
+   
+    .buttons-nets{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    
+#container-agent-hidden{
+    @include containers-responsive-w (100%,100%,100%,#000000b5);
+    max-height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    overflow-y: scroll;
+
+    
+}
+}
+@import'../responsive-agent-mobile/responsive-agente-mobile';

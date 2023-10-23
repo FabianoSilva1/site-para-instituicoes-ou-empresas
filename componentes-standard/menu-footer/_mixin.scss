@@ -1,0 +1,43 @@
+@mixin containers ($width,$heigth,$backgroud) {
+    width: $width;
+    height: $heigth;
+    background-color: $backgroud;
+}
+
+
+
+@mixin responsive ($screen){
+    @if $screen == mobile{
+        @media screen and (min-width:320px) and (max-width: 700px){
+            @content;
+        }
+        
+    }    @else if $screen == tablet{
+        @media screen and (min-width:700px) and (max-width: 1000px){
+            @content;
+        }
+        
+    }
+}
+
+@mixin text($font, $color, $font-fam){
+    font-size: $font;
+    color: $color;
+    font-family: $font-fam;
+}
+@mixin icos($font, $color){
+    font-size: $font;
+    color: $color;
+}
+@mixin containers-responsive-w ($width,$max-w,$heigth,$backgroud) {
+    width: $width;
+    max-width: $max-w;
+    height: $heigth;
+    background: $backgroud;
+}
+@mixin containers-responsive-h ($heigth,$max-h,  $width,$backgroud) {
+    height: $heigth;
+    max-height: $max-h;
+    width: $width;
+    background-color: $backgroud;
+}

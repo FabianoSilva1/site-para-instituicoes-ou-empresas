@@ -1,0 +1,171 @@
+@import 'variables';
+@import 'mixin';
+
+
+
+.box-links-paragraphs {
+div {
+&:nth-child(2) {
+p {
+&:nth-child(1) {
+    @include text ($font-4, $color-font-2, $font-roboto);
+
+}
+}
+}
+
+p {
+    &:nth-child(3) {
+    @include text (32px, $color-hover, 'allura');
+
+}
+}
+    }
+}
+
+.highlights p {
+    @include text ($font-pattern-3, #9c9c9c, $font-roboto);
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 30px;
+
+
+}
+
+.components-infor {
+    text-align: center;
+
+&:nth-child(2) {
+p {
+    @include text ($font-pattern-3, rgb(80, 80, 80), $font-roboto);
+    line-height: 24px;
+    font-weight: 500;
+
+}
+}
+}
+
+.background-youtube {
+
+
+    div {
+        &:nth-child(1) {
+            p {
+                @include text ($font-pattern-3, $color-font, $font-roboto);
+                font-weight: 400;
+                line-height: $font-5;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+
+.select-video {
+p {
+    @include text(18px, $color-font, $font-noto-sans);
+    font-weight: 400;
+    margin: 90px 30px 0px 70px;
+//configuração resposive mobile
+
+}
+}
+}
+
+.father-events {
+p {
+    @include text($font-pattern-3, #555555,$font-roboto);
+    font-weight: 400;
+    margin-bottom: 40px;
+//configuração resposive mobile
+
+}
+}
+
+.studies {
+p {
+&:nth-child(2) {
+    text-align: center;
+    grid-area: paragraphs;
+    @include text ($font-pattern-3, rgb(115, 115, 115), $font-roboto);
+    margin-bottom: 40px;
+    font-weight: 400;
+//configuração resposividade mobile
+
+}
+
+}
+
+    .studies-matters {
+
+
+        div {
+            &:nth-of-type(n) {
+
+                article {
+                    max-width: 200px;
+                    height: 200px;
+                    text-overflow: ellipsis;
+                    margin: 10px 10px 5px 0px;
+                    overflow: hidden;
+                    @include text ($font-pattern-3, rgb(61, 61, 61), system-ui);
+                    line-height: $font-5;
+                    text-align: start;
+                }
+
+            }
+
+
+
+
+        }
+    }
+
+    .studies-resources {
+
+        div {
+            p {
+                grid-area: resources-paragraph;
+                @include text ($font-pattern-3, $color-font-2, $font-roboto);
+                font-weight: 400;
+                line-height: $font-5;
+            }
+        }
+    }
+}
+
+.content-photos {
+
+    div {
+        &:nth-of-type(1) {
+
+            p {
+                margin-top: 40px;
+                @include text ($font-pattern-3, $color-font-2, $font-roboto);
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
+
+}
+
+.container-acceptance {
+    .box-acceptance{ 
+    p {
+        @include text ($font-pattern-3,rgb(61, 61, 61),$font-roboto);
+        font-weight: 400;
+    }
+}
+}
+.container-login{
+    div{
+        &:nth-of-type(1){
+            p{
+                @include text ($font-3,rgb(61, 61, 61),$font-roboto);
+                font-weight: 400;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import'location-mixin';
+@import'location-variables';
+.church-location{
+    h1{
+        @include text(37px,$color-font,$font-noto-sans);
+        font-weight: 400;
+    }
+    .location-instruction{
+        div{
+            h3{
+                margin: 20px 0px 20px 0px;
+                a{
+                    text-decoration: none;
+                    @include text (23px,$color-font,$font-noto-sans);
+                    font-weight: 700;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+.localition-church{
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    div{
+        h2{
+            @include text(32px,$color-font,$font-noto-sans);
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import '../../../../menu-footer/menus';
+@import '../../../../menu-footer/footer';
+@import '../../../../container-page/container';
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@import '../../../../animation-text-page/propriets-ani';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.depatments-articles{
+    @include containers-responsive-w (100%,100%,auto,transparent);
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+article{
+    width: 100%;
+    height: 310px;
+    max-width: 100%;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 100px;
+figure{
+    width: 310px;
+    height: 310px;
+    background: url(../../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+figcaption{
+    padding:0px 0px 0px 30px ;
+h1{
+    @include text ($font-6,#4a4a4a,$font-noto-sans);
+    font-weight: 500;
+    line-height: $font-8;
+}
+p{
+    @include text ($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+    line-height: $font-5;
+
+}
+h2{
+    @include text ($font-pattern-3,$color-hover,$font-roboto);
+    font-weight: 400;
+    line-height: $font-5;
+}
+}
+}
+}
+.link-coordinators{
+    @include containers-responsive-w(100%,100%,auto,$color-font);
+    padding: 0px 0px 100px 100px;
+    line-height: $font-5;
+p{
+    @include text($font-pattern-3,$color-font-5,$font-roboto);
+    font-weight: 400;
+
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+a{
+    transition: all .3s;
+    text-decoration: none;
+    @include text ($font-pattern-3,$color-font,$font-roboto);
+    line-height: $font-4;
+    font-weight: 400;
+    padding: 13px 35px;
+    background-color: $bgcolor;
+    border-radius: 3px;
+&:hover{
+    background-color: #555555;
+}
+}
+}
+
+}
+
+@import '../responsive-depatments/responsive-mobile-depatments';
+@import '../responsive-depatments/responsive-tablet-depatments';

@@ -1,0 +1,38 @@
+
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@include responsive(tablet){
+.img{
+.background{
+h1{
+    font-size: 30px;
+    margin:0px 10px 0px 0px !important ;
+
+}
+p{
+    margin-right: 10px ;
+}
+
+}
+}
+.card-article{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 70px;
+article{
+    width: 240px;
+    margin: 10px;
+figure{
+    width: 240px;
+    height: 240px;
+}
+figcaption{
+    padding: 0;
+    margin: 40px 0px;
+}
+}
+}
+.button-departments{
+    padding: 100px 90px;
+}
+}

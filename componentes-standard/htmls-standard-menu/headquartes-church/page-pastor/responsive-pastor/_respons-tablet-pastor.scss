@@ -1,0 +1,37 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@include responsive(tablet){
+.sec-pastor{
+    flex-direction: column;
+    padding-top: 50px;
+div{
+&:nth-of-type(1){
+    padding: 15px 100px;
+    width: 100%;
+
+    max-width: 100%;
+p{
+    font-size: 14px;
+    line-height: $font-4;
+}
+}
+&:nth-of-type(2){
+    width: 100%;
+    margin-top: 50px;
+    max-width: 100%;
+figure{
+    background-position: 59% 50%;
+}
+}
+}
+}
+.history-pastor-church{
+    height: 1000px;
+    padding: 0px 20px;
+    justify-content: center;
+div{
+    height: 900px;
+    margin: 0;
+}
+}
+}

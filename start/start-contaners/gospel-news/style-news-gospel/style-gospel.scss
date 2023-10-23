@@ -1,0 +1,115 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/menu-footer/variables';
+@import'../../../../componentes-standard/menu-footer/mixin';
+
+@import'../../../../componentes-standard/container-page/container';
+@import'../../../../componentes-standard/links/links';
+@import'../../../../componentes-standard/menu-footer/footer';
+@import '../../../../componentes-standard/animation-text-page/propriets-ani';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    z-index: 1;
+}
+.img{
+    background: url(../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.news-container{
+    margin-top: 80px;
+    @include  containers-responsive-w (100% ,100%, auto ,$color-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+.news-gospel{
+    width: 728px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 40px;
+.news-gospel-cont{
+    width: 728px;
+    height:100%;
+    max-width: 100%;
+figure{
+    width: 100% ;
+    width: 728px;
+    height: 400px;
+    background: $bgcolor url("../../../../imgs/corpo.jpg") 50% 50% no-repeat ;
+     background-size: cover;
+}
+article{
+a{
+    text-decoration: none;
+h1{
+    @include text(22px,$color-font-5,$font-noto-sans);
+    font-weight: 500;
+    transition:all .3s ease;
+    margin: 10px 0px 10px 0px;
+&:hover{
+    color: $color-hover; 
+}
+}
+}
+p{
+@include text($font-pattern-3,$color-font-5,$font-roboto);
+    line-height: 25px;
+    font-weight: 400;
+   }
+.button-gospel{
+    padding: 10px 10px 10px 10px;
+  border:  1px solid #ccc;
+  width: 154px;
+  text-align: center;
+  text-decoration: none;
+    @include text (14px, $color-font-3, $font-roboto);
+    transition: all .3s ease;
+    font-weight: 500;
+    margin-top: 10px;
+&:hover{
+    color: $color-hover;
+}
+}
+}
+ &:nth-of-type(n+2){
+    margin-top: 50px;
+ }
+&:nth-last-of-type(1){
+    margin-bottom: 50px;
+}
+article{
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    padding: 15px 15px 60px 15px;
+    width: 728px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+span{
+    &:nth-of-type(1){
+     @include text ($font-pattern-3,#3d3d3d,$font-roboto);
+                        // letter-spacing: 1.3px;
+                        font-weight: 900;
+                        margin: 10px 0px 10px 0px;
+                        line-height: 25px;
+                    }
+                    &:nth-of-type(2){
+                        @include text ($font-4,#3d3d3d,$font-roboto);
+                        // letter-spacing: 1.3px;
+                        font-weight: 400;
+                        line-height: 31px;
+                    }
+                }
+            }
+        }
+    }
+}
+@import '../style-news-gospel/resposive-news-gospel/mobile-news-gospel';
+@import '../style-news-gospel/resposive-news-gospel/tablet-news-gospel';

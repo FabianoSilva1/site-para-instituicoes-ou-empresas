@@ -1,0 +1,29 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+
+@include responsive(mobile){
+
+.study-container{
+    flex-direction: column ;
+    padding: 0px 20px;
+.study{
+a{
+figure{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 185px !important; 
+}
+}
+article{
+p{
+    font-size: 13px !important; 
+}
+span{
+&:nth-of-type(1){
+    font-size: 13px !important;
+}
+}
+}
+}
+}
+}

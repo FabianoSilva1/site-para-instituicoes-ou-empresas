@@ -1,0 +1,31 @@
+@import '../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../componentes-standard/menu-footer/variables';
+@include responsive(tablet){
+.highlights-article {
+    flex-direction: column;
+    padding: 0px 100px 100px 100px;
+.hlts {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+.hlt{
+    width: 100%;
+    max-width: 100%;
+a{
+    width: 100% !important;
+    max-width: 100%;
+    height: 500px !important;    
+}
+div{
+    width: 100%;
+    max-width: 100%;
+p{
+    padding: 0px 20px;
+    text-align: justify;
+}
+}
+}
+}
+}
+}

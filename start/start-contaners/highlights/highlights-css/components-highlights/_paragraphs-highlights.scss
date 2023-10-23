@@ -1,0 +1,26 @@
+@import'mixin-highlights';
+@import'variables-highlights';
+
+ .highlights-article {  
+   .hlts {
+       .hlt{
+           div{
+            p{
+                  margin-top: 20px;
+                  @include text (14px,$color-font-3,$font-roboto);
+                  line-height: 22px;
+                  font-weight: 400
+               
+                  }
+                  small{
+                     @include text (18px,$color-font-3,$font-roboto);
+                     margin: 10px 0px 30px 0px;
+
+              
+                  }
+               }
+            }
+         }
+      }
+      
+    

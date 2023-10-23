@@ -1,0 +1,35 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@include responsive(mobile){
+.sec-pastor{
+    flex-direction: column;
+    padding-top: 50px;
+div{
+&:nth-of-type(1){
+    padding: 15px;
+    width: 100%;
+
+    max-width: 100%;
+p{
+    font-size: 13px;
+}
+}
+&:nth-of-type(2){
+    width: 100%;
+    margin-top: 50px;
+    max-width: 100%;
+figure{
+    background-position: 59% 50%;
+}
+}
+}
+}
+.history-pastor-church{
+    height: 2000px;
+    padding: 0px 20px;
+div{
+    height: 1600px;
+    margin: 0;
+}
+}
+}

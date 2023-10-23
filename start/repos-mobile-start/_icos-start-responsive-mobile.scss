@@ -1,0 +1,57 @@
+@import'../../componentes-standard/menu-footer/mixin';
+@import'../../componentes-standard/menu-footer/variables';
+
+.box-links-paragraphs {
+div {   
+&:nth-child(1) {
+div { 
+a {
+i{
+@include responsive(mobile){
+    font-size: $font-7 !important;
+    margin: 0px !important;
+}
+}
+}    
+}
+}
+}
+}
+////responsividade dos icones da seção localização
+.map-localization {
+ 
+.components-infor {
+div {
+&:nth-child(2) {
+#localization{
+i{
+@include responsive(mobile){
+    margin-right: 5px;
+}
+}
+}
+ }
+}
+}
+}
+
+.father-events {
+h3{
+i{
+@include responsive (mobile){
+    font-size: 38px;
+}
+}
+}  
+}
+.studies {
+h3{
+i{
+@include responsive(mobile){
+    font-size: 38px;
+}
+}
+}
+}
+    
+    

@@ -1,0 +1,40 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/menu-footer/variables';
+@include responsive( tablet){
+
+.church-location{
+    padding: 100px 50px;
+    height: auto;
+p{
+    width: 100%;
+    max-width: 100%;
+}
+.location-instruction{
+    flex-direction: column;
+    justify-content:normal ;
+    height: auto;
+    align-items: center;
+div{
+    width: 80%;
+    max-width: 100%;
+p{
+    width: 100%;
+    max-width: 100%;
+}
+}
+}
+
+}
+.localition-church{
+    height: 500px;
+.location-background{
+    flex-direction: column;
+    padding: 0px 100px;
+    justify-content: center;
+    align-items: normal;
+h2{
+margin-bottom: 30px;
+}
+}
+}
+}

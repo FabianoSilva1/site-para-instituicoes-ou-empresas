@@ -1,0 +1,122 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+.senior-pastor-sc{
+.button-pastor{
+    height: 30PX;
+    transition-timing-function:ease ;
+    transition-duration: 0.2s;
+    transform-style:preserve-3d ;
+    border: none;
+    background-color: transparent;
+   transform:  perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(0deg) skew(-10deg, 0deg);
+    a{
+    padding: 15px 20px;
+    background-color: $bgcolor ;
+    transform-origin: center center ;
+    transition: all .3s;
+    border-radius: 5px;
+    cursor: pointer;
+    @include text ($font-pattern-3, $color-font,$font-roboto);
+    font-weight: 400;
+    text-decoration: none;
+    &:hover{
+        background-color: #153867;
+    }
+}
+}
+}
+.history-church{
+a{
+    transform-style:preserve-3d ;
+    transition-timing-function:ease ;
+    transition-duration: 0.2s;
+    padding: 15px 20px;
+    background-color: $bgcolor ;
+    transform-style:preserve-3d ;
+    transform-origin: center center ;
+    transition: all .3s;
+    border-radius: 5px;
+    cursor: pointer;
+    @include text ($font-pattern-3, $color-font,$font-roboto);
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 50px;
+    transform:  perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(0deg);
+&:hover{
+    background-color: #153867;
+}
+
+}
+}
+.board-headquartes{
+.wrapper{
+    button{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        background-color: transparent;
+        border: 1px solid $color-font-19;
+        border-radius: 3px ;
+        z-index: 1;
+    i{
+        color: $color-font-19;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    }
+    #button-board-left{
+        left: -60px;
+    }
+    #button-board-right{
+        right: -60px;
+    }
+}
+a{
+    margin-top: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px 20px;
+    transition: all .5s;
+    transform: rotateX(60deg);
+    transition-timing-function: ease;
+    transition-duration: .5s;
+    background-color: $bgcolor ;
+    @include text ($font-pattern-3, $color-font,$font-roboto);
+&:hover{
+    background-color: #153867;
+}
+}
+}
+.church-thirst{
+.card-church{
+.card{
+button{
+    background-color: transparent;
+    border: none;
+a{
+    text-decoration: none;
+i{
+    color: $color-hover;
+    font-size: 60px  ;
+}
+
+}
+
+}
+button{
+&:nth-of-type(2){
+    margin-bottom: 10px;
+a{
+    @include text ($font-pattern-3,$bgcolor,$font-noto-sans);
+    transition: all .3s;
+&:hover{
+    color: $color-hover;
+}
+}
+}
+}
+}
+}
+}

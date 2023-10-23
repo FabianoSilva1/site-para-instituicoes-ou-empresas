@@ -1,0 +1,76 @@
+@import'events-mixin';
+@import'variables-events';
+
+.events-matters-side{
+      
+        
+  
+        
+    a {
+        text-decoration: none;
+    }
+
+    .news-events {
+     
+
+        a {
+
+
+            line-height: 30px;
+            @include text (12px, $color-font, $font-roboto);
+            font-weight: 400;
+            transition: all .3s;
+
+            &:hover {
+                color: $bgcolor;
+            }
+        }
+    }
+    .recent-events{
+   
+              a{
+                 margin: 10px 0px 5px 0px;
+                 display: block;
+                  @include text (12px,$color-font,$font-noto-sans);
+                  font-weight: 500;
+                  line-height: 19px;
+
+              }
+            
+          
+          }
+}
+.social-network-events{
+
+   
+      
+        a{
+           
+          i{
+            transition: all .3s;
+          }
+            &:nth-of-type(1){
+              i{
+                  &:hover{
+                      color: red;
+                  }
+        
+              }
+          }
+          &:nth-of-type(2){
+              i{
+                  &:hover{
+                      color: #FE33FF;
+                  }
+              }
+          }
+          &:nth-of-type(3){
+              i{
+                  &:hover{
+                      color: #00ACF1;
+                  }
+                  
+              }
+}
+}
+}

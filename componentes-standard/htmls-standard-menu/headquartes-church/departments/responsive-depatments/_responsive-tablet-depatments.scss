@@ -1,0 +1,34 @@
+@import '../../../../menu-footer/mixin';
+@import '../../../../menu-footer/variables';
+@include responsive(tablet){
+.depatments-articles{
+    padding: 50px 100px;
+article{
+    height: 170px;
+    margin-bottom:60px;
+figure{
+    width: 210px;
+    max-width: 100%;
+    height: 210px;
+}
+figcaption{
+    padding: 0px;
+    width: 200px;
+    max-width: 100%;
+h1{
+    font-size:22px ;
+
+}
+p{
+    font-size: 13px;
+}
+h2{
+    font-size: 13px;
+}
+}
+}
+}
+.link-coordinators{
+    padding: 50px 20px;
+}
+}

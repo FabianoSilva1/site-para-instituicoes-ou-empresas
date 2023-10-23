@@ -1,0 +1,64 @@
+@import'../../../../componentes-standard/menu-footer/menus';
+@import'../../../../componentes-standard/container-page/container';
+@import'../../../../componentes-standard/links/links';
+@import'../../../../componentes-standard/menu-footer/footer';
+@import'../../../../componentes-standard/animation-text-page/propriets-ani';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(../../../../imgs/corpo.jpg) center center no-repeat;
+    background-size: cover;
+}
+.devotional-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0px;
+    padding: 0px 100px;
+.devotional{
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    flex: 1 1 800px;
+    padding: 0px 40px;
+div{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+
+article{
+    display: flex;
+    flex-direction: column;
+button{
+    background-color: transparent;
+    border: none;
+a{
+figure{
+    width: 410px;
+    height: 410px;
+    max-width: 100%;
+    background: url(../../../../imgs/corpo.jpg) center center no-repeat ;
+    background-size: cover
+}
+}
+}
+span{
+    @include text ($font-4,$color-font-5,$font-roboto);
+    font-weight: 400;
+    margin: 20px 0px ;
+}
+}
+}
+}
+}
+
+@import 'responsive-devotional/tablet-devotional';
+@import 'responsive-devotional/mobile-devotional';

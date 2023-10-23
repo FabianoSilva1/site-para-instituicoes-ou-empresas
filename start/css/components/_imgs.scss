@@ -1,0 +1,261 @@
+@import'variables';
+@import'mixin';
+
+nav {
+div {
+img {
+    margin-top: 15px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+}
+}
+            
+            // .automatic-images {
+           
+            // }
+            
+.highlights {
+                .incertion-of-highlights-images {
+                    .highlights-img {
+                        a{
+                            background: $bgcolor url("../../imgs/corpo.jpg") center center no-repeat;
+                            background-size: cover;
+                            transition: all 0.3s;
+                        
+                
+                            &:hover {
+                                transform: scale(1.2);
+                            } 
+                        }
+                   
+            
+                    }
+                }
+            }
+            
+.map-localization {
+            
+            
+            
+                .background-map-localition {
+            
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    background: url("../../imgs/image-box-map.PNG") center center no-repeat fixed;
+                    background-size: cover;
+                    opacity: 0.2;
+            
+                }
+}
+            
+ .components-infor {
+div {
+&:nth-child(1) {
+a{ 
+figure {
+background: url("../../imgs/igrejas-de-araci.jpg") center center no-repeat;
+ background-size: cover;
+ transition: all 0.2s;
+@include containers (649px, 250px, $bgcolor);
+
+&:hover {
+transform: scale(1.1);
+}
+            
+            
+                        }
+                    }
+            
+                    }
+                }
+}
+            
+            
+.youtube {
+            
+                background: url("../../imgs/youtube.png") 50% 10px no-repeat fixed;
+                background-size: cover;
+            
+                .background-youtube {
+                    max-width: 100%;
+                    height: 100%;
+                }
+            
+             
+}
+            
+ .father-events {
+.events-figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+div {
+.event {
+    max-width: 100%;
+    width: 190px;
+    height: 270px;
+    display: flex;
+a{
+    width: 100%     ;
+    max-width: 100%;
+    height: 100%;
+    background: url("../../imgs/corpo.jpg") 30% 60% no-repeat;
+    background-size: 400%;
+    transition: all 0.2s;
+&:hover {
+    transform: scale(1.1);
+}
+}
+}
+            
+figcaption {
+    margin-top: 10px; 
+    
+a{
+    width: 100%;
+    color: $bgcolor;
+    padding: 12px 40px 40px 40px;
+    text-decoration: none;
+    font-family: "Varela Round";
+    text-align: center;
+    font-weight: 400;
+    line-height: 25px;
+
+    &:hover {
+    color: $color-hover;
+    transition: all 0.3s;
+    }
+    }
+    }
+    }
+                    }
+            
+                }
+
+.studies-matters{
+                   
+                 
+                    div{
+                        figure{
+                            
+                           
+                            a{
+                               background: url("../../imgs/corpo.jpg") 30% 60% no-repeat;
+                               background-size: 200%;
+                               transition: all .3s;
+                                &:hover{
+                                    transform: scale(1.08);
+                                }
+                                
+                            }
+                         
+                        }}}
+            
+            
+            
+            
+.containrs-photos{
+                max-width: 100%;
+                background: url("../../imgs/fundo-fotos.jpeg") calc(100% ) no-repeat fixed;
+                .background-photos{
+                    max-width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.842);
+                }
+            }
+.content-photos{
+
+               figure{
+                a{
+                    width: 160px;
+                    height: 160px;
+                    background: url("../../imgs/corpo.jpg") 30% 60% ;
+                    background-size: 200%;
+                    transition: all .3s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+               }
+
+               figcaption{
+                a{
+                    @include text (14px,$color-font, $font-noto-sans);
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+         
+               }
+             }
+.container-acceptance{
+    background: url("../../imgs/corpo.jpg") center center  no-repeat;
+    background-size: cover;
+.box-acceptance{
+svg{
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    position: absolute;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+path{
+    stroke: #f44336;
+    stroke-width: 10;
+    fill: none;
+}
+}
+.animation-svg{
+    animation-name: ani-svg;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+@keyframes ani-svg {
+from{
+    stroke-dashoffset: 1500;
+}
+to{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1500;
+}
+}
+}
+}
+}
+             .container-login {
+              
+                div {
+                  
+            
+                    &:nth-of-type(2) {
+                     
+            
+                        ul {
+                        
+            
+            
+            
+                            li {
+                              
+                                background: url("../../imgs/user.png") center center no-repeat;
+                                background-size: cover;
+                                
+                            }
+                        }
+            
+                    }
+                }
+            }
+ 
+        
+            
+                
+            
+            
+            

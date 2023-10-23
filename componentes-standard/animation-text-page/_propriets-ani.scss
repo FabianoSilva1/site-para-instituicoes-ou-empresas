@@ -1,0 +1,203 @@
+.anT{
+    width: 300px;
+    margin-left: 20px;
+    display: inline-block;
+    height: 50px;
+    opacity: 0;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    @include text ($font-8,$color-hover,$font-roboto);
+    font-weight: 500;
+
+}
+.anTmenu{
+    width: 300px;
+    margin-left: 10px;
+    display: inline-block;
+    height: 50px;
+    opacity: 0;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    @include text ($font-8,$color-hover,$font-roboto);
+    font-weight: bold;
+
+}
+.is-hidden{
+  //  -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    position: absolute;
+  //  -webkit-animation: animated-text-animation-flip-out 1.2s;
+    animation: animated-text-animation-flip-out 1.2s;
+    animation-fill-mode: forwards;
+}
+.is-visible{
+    opacity: 1;
+    position: absolute;
+    -webkit-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-animation: animated-text-animation-flip-in 1.2s;
+    animation: animated-text-animation-flip-in 1.2s;
+@keyframes animated-text-animation-flip-in {
+        0% {
+            -webkit-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+            opacity: 0
+        }
+    
+        35% {
+            -webkit-transform: rotateX(120deg);
+            -ms-transform: rotateX(120deg);
+            transform: rotateX(120deg);
+            opacity: 0
+        }
+    
+        65% {
+            opacity: 0
+        }
+    
+        100% {
+            -webkit-transform: rotateX(360deg);
+            -ms-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+            opacity: 1
+        }
+    }
+}
+@keyframes animated-text-animation-flip-out {
+    0% {
+        -webkit-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1
+    }
+
+    35% {
+        -webkit-transform: rotateX(-40deg);
+        -ms-transform: rotateX(-40deg);
+        transform: rotateX(-40deg);
+        opacity: 1
+    }
+
+    65% {
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+}
+.text-animation-menu-string,.text-animation-menu-string-midia,.text-animation-menu-string-news,.text-animation-pix,.text-animation-bank-brazil,.text-animation-string-mag,.text-animation-string-YOUTUBE{
+    position: absolute;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+@include responsive (mobile){
+    height:30px;
+}
+i{
+    @include text($font-5,$color-hover,$font-roboto);
+    font-weight: 600;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-style: normal;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.aniTextbank,.aniText-mag,.aniText-YT{
+ 
+    @include text (36px !important,$color-hover !important,$font-noto-sans !important) ;
+}
+.out{
+    -webkit-animation: scale-down .6s forwards;
+    animation: scale-down .6s ;
+    animation-fill-mode: forwards;
+    opacity: 0;
+@keyframes scale-down {
+0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+60% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+}
+
+@-webkit-keyframes scale-down {
+0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+60% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+}
+}
+}
+.in{
+     -webkit-animation: scale-up .6s forwards;
+    animation: scale-up .6s forwards;
+
+@-webkit-keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0
+    }
+
+    60% {
+        -webkit-transform: scale(1.2);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes scale-up {
+0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+}
+
+60% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1
+}
+
+100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+}
+}
+}

@@ -1,0 +1,59 @@
+@import '../../../componentes-standard/menu-footer/mixin';
+@import '../../../componentes-standard/menu-footer/variables';
+
+.container-youtube-videos-tv{
+.container-videos-tv{       
+.video-tv{
+.description-video{
+p{
+    @include text (16px , $color-font-15,$font-roboto);
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+} 
+}
+}
+}
+.backgound-youtube-container {
+.backgound-black-youtube {
+div {
+&:nth-of-type(2) {
+p {
+    @include text ($font-pattern-3, $color-font, $font-roboto );
+    line-height: 25px;
+    font-weight: 400;
+}
+}
+}
+}
+}
+    
+.youtube-plates {
+#youtube-plates-paragraphs {
+    @include text ($font-pattern-3, rgb(173, 173, 173), $font-roboto);
+    margin-bottom: 70px;
+    line-height: 23px;
+    font-weight: 400;
+}
+    
+
+}
+                    
+.youtube-plates{
+.container-plates{
+.card{
+.flip-card{
+
+.back-card{
+p{
+    @include text (12px,rgb(219,182,109),$font-roboto);
+     margin-bottom:10px ;
+}
+}
+}
+}
+}
+}        
+        
+  

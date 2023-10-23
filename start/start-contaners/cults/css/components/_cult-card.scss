@@ -1,0 +1,77 @@
+@import'cult-mixin';
+@import'cult-variables';
+.cults-cards{
+   
+ .container-cards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+   padding: 80px;
+    height: 800px;
+    flex-wrap: wrap;
+    flex: 1 1 500px;
+.card:hover .flip{
+ transform: rotateY(180deg);
+ height: 140px;
+}
+.card{
+    width: 300px;
+    height: 125px;
+    position: relative;
+    margin: 20px;
+    perspective: 1000px;
+.flip{
+    transition: transform 0.9s;
+    transform-style:preserve-3d ;
+
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100% ;
+    height: 125px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.front{
+figure{
+width: 100%;
+height: 100%;
+background: url(../../../../imgs/corpo.jpg) center center no-repeat;
+background-size: cover;
+div{
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.511);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+h1{
+    @include text ($font-5,$color-font,$font-roboto);
+    font-weight: 400;
+}
+}
+}
+}
+.back{
+p{
+    text-align: center;
+
+}
+    height: 150px;
+    background-color: $bgcolor;
+    transform: rotateY(180deg);
+    padding: 0px 30px;
+}
+
+
+}
+}    
+}
+}

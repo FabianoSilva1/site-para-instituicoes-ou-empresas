@@ -1,0 +1,88 @@
+@import '../mixin';
+@import '../variables';
+.container-footer {
+@include responsive(mobile){
+    height: 750px;
+}
+@include responsive(tablet){
+
+    height:auto;
+}
+.footer-infomation {
+@include responsive(tablet){
+height:auto;
+flex-direction: column;
+//padding: 80px 0px;
+
+.footer-icos{
+    display: none;
+}
+.footer-logo{
+    background-size: 60%;
+    margin: 50px 0px;
+}
+.intro{
+    margin: 20px 0px;
+}
+.footer-inform {
+ display: none;
+}
+}
+.footer-inform {
+@include responsive(mobile){
+    margin: 20px 0px;
+    height: 150px !important;
+
+}
+}
+.footer-icos {
+@include responsive(mobile){
+    display: none !important;
+}
+}
+
+.footer-social-network {
+@include responsive(mobile){
+    height: 100px !important;
+}
+.intro {
+h1{
+@include responsive(mobile){
+    font-size: $font-4;
+}
+@include responsive(tablet){
+    font-size: $font-4;
+}
+}
+}
+}
+
+
+}
+.footer-rights {
+@include responsive(mobile){
+    width: 90%;
+}
+@include responsive(tablet){
+    padding:  50px;
+}
+ul{
+@include responsive (mobile){
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
+li{
+@include responsive (mobile){
+    margin: 0px 10px;
+}
+}
+}
+}
+p{
+@include responsive(tablet){
+    font-size: $font-3 !important;
+}
+}
+}
+}

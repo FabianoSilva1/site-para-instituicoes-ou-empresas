@@ -1,0 +1,20 @@
+@import'../../../../../componentes-standard/menu-footer/variables';
+@import'../../../../../componentes-standard/menu-footer/mixin';
+
+.img{
+    background: $bgcolor url("../../../../imgs/corpo.jpg") center center no-repeat;
+    background-size: cover;
+}
+.photo-gallery{
+
+    .photos{
+
+        .photo{
+            figure{
+                @include containers-responsive-w (100%,100%,300px,$bgcolor url("../../../../imgs/inlustração.png") center center) ;
+                background-size: cover;
+            }
+        }
+    }
+
+}

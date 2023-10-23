@@ -1,0 +1,38 @@
+@import '../../../../../componentes-standard/menu-footer/mixin';
+@import '../../../../../componentes-standard/menu-footer/variables';
+@include responsive(tablet){
+
+.news-container{
+    flex-direction: column ;
+    padding: 0px 70px;
+    align-items: center;
+.news-gospel{  
+    margin: 0;  
+    display: flex;
+   
+.news-gospel-cont{
+a{
+figure{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 310px !important; 
+}
+
+}
+
+article{
+    
+p{
+    font-size: 13px !important; 
+    line-height: $font-4;
+}
+span{
+&:nth-of-type(1){
+    font-size: 13px !important;
+}
+}
+}
+}
+}
+}
+}
