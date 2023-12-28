@@ -59,7 +59,7 @@ div{
     flex-direction: column;
     overflow-x: hidden;
 .wrapper{
-    width: 90%;
+    width:80%;
     position: relative;
     align-items: center;
     transition: all 2500ms ease 0s;
@@ -83,19 +83,19 @@ div{
 
 
 .slide-officer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display: grid;
+    user-select: none;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4)); 
     height: 445px;
+    gap: 5px;
  //   background-color: blue;
     width: 90%;
     cursor: grab;
-    transition: all 1s;
+//    transition: all 1s;
 .officer{
     flex-shrink:0 ;
-    width: 320px ;
     height: 445px;
-    margin-right: 10px;
 &:last-child{
     margin-right: 0px
 }

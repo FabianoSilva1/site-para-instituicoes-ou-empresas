@@ -2304,6 +2304,7 @@ body {
   border: 1px solid #399BFF;
   border-radius: 3px;
   z-index: 1;
+  cursor: pointer;
 }
 .board-headquartes .wrapper button i {
   color: #399BFF;
@@ -2584,7 +2585,7 @@ body {
   overflow-x: hidden;
 }
 .board-headquartes .wrapper {
-  width: 90%;
+  width: 80%;
   position: relative;
   align-items: center;
   transition: all 2500ms ease 0s;
@@ -2606,19 +2607,20 @@ body {
   overflow: hidden;
 }
 .board-headquartes .wrapper .offices-members .slide-officer {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  display: grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
   height: 445px;
+  gap: 5px;
   width: 90%;
   cursor: grab;
-  transition: all 1s;
 }
 .board-headquartes .wrapper .offices-members .slide-officer .officer {
   flex-shrink: 0;
-  width: 320px;
   height: 445px;
-  margin-right: 10px;
 }
 .board-headquartes .wrapper .offices-members .slide-officer .officer:last-child {
   margin-right: 0px;

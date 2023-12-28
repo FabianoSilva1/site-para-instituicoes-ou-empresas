@@ -1,24 +1,29 @@
 
 
 function animationPhone  () {
-    const text = document.querySelector('.text');
+const text = document.querySelector('.text');
 const constaineraddAnimation = document.querySelector('.container-text');
 constaineraddAnimation.classList.remove('animation-pointer-width');
-setTimeout(()=>{
+const tagnameOne = setTimeout(()=>{
 text.textContent = 'CONOSCO';
 constaineraddAnimation.classList.remove('animation-pointer-width');
 constaineraddAnimation.classList.add('animation-pointer-width');
-
-
+clearTimeout(tagnametwuo);
 },0)
-setTimeout(() =>{ 
+
+
+
+const tagnametwuo = setTimeout(() =>{ 
     text.textContent = `COM A IGREJA`;
     constaineraddAnimation.classList.remove('animation-pointer-width');
     constaineraddAnimation.classList.add('animation-pointer-width');
+    clearTimeout(tagnameOne);
 },4000)
+
+
 }
 
-function animationLogin  () {
+ function animationLogin  () {
     const text = document.querySelector('.text-login');
     const constaineraddAnimation = document.querySelector('.container-text-login');
     constaineraddAnimation.classList.remove('animation-pointer-width');

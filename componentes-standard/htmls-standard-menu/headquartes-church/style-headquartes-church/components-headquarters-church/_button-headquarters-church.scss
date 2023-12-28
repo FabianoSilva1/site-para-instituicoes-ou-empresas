@@ -7,6 +7,7 @@
     transition-duration: 0.2s;
     transform-style:preserve-3d ;
     border: none;
+
     background-color: transparent;
    transform:  perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(0deg) skew(-10deg, 0deg);
     a{
@@ -58,6 +59,7 @@ a{
         border: 1px solid $color-font-19;
         border-radius: 3px ;
         z-index: 1;
+        cursor: pointer;
     i{
         color: $color-font-19;
         font-weight: 700;
